@@ -729,8 +729,64 @@ elif selected_page == "Glasgow":
 
 
 elif selected_page == "Alcohol":
-    st.title("An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times")
-    st.write("An analysis of the impact of alcohol-related incidents on ambulance response times.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times
+
+    In collaboration with **Ernst & Young** and the **NHS**, I conducted an analysis of the impact that alcohol-related callouts have on the **Scottish Ambulance Service**. The project aimed to identify bottlenecks in ambulance waiting times caused by these incidents and offer actionable recommendations to alleviate the burden.
+
+    ### Key Contributions
+
+    - **Data Analysis**: Analyzed the **Scottish Ambulance Service data**, focusing on the impact of alcohol-related callouts and how they affect **ambulance waiting times**.
+    
+    - **Time-Based Insights**: Presented the **temporal distribution** of these callouts, showing how **time of day** and **day of the week** affect the frequency and strain on ambulance services. This provided a clearer picture of peak times and allowed for targeted recommendations.
+
+    - **Sober Centre Recommendations**: Proposed the introduction of **sober centers** to handle alcohol-related cases, estimating the potential improvement in ambulance waiting times. This included **cost estimates** for setting up these centers and recommendations for **staff allocation**.
+
+    - **Geographical Analysis**: Identified areas in **Glasgow** with the highest rate of alcohol-related callouts, recommending optimal locations for the sober centers. The analysis highlighted key zones where these centers would have the most impact on reducing ambulance waiting times.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Tableau</div>
+        <div class="tag">Geographical Data Analysis</div>
+        <div class="tag">Cost Analysis</div>
+        <div class="tag">Scottish Ambulance Service Data</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Impact
+    The analysis revealed key patterns in alcohol-related callouts, highlighting their significant impact on **ambulance response times**. By proposing **sober centers** and identifying the best locations for them, the project offered **realistic solutions** to improve emergency response efficiency in Glasgow. The insights provided can inform **policy decisions** aimed at improving public health services.
+    """)
+
 
 elif selected_page == "SyncOrg":
     st.title("Data Management & Workflow Optimization for SyncOrg")
