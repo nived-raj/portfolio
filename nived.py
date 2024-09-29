@@ -210,10 +210,16 @@ elif selected_page == "Skills":
 
 
 elif selected_page == "Contact":
-    st.title("Contact Me")
-    st.write("Email: nived2033@gmail.com")
-    st.write("Phone: +44 7824819279")
-    st.write("[LinkedIn](www.linkedin.com/in/nived-raj-2033da)")
+    # Introduction line
+    st.write("Feel free to reach out to me through any of the following platforms:")
+
+    # Contact details
+    st.write("""
+    - **Phone**: +44 7824819279 
+    - **Email**: nived2033@gmail.com 
+    - **LinkedIn**: [linkedin.com/in/nivedraj](https://nivedraj.streamlit.app/~/+/www.linkedin.com/in/nived-raj-2033da)
+    """)
+
     
 
 elif selected_page == "YouTube":
