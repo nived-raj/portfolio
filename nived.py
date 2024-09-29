@@ -664,8 +664,72 @@ elif selected_page == "Crypto":
 
 
 elif selected_page == "Movie Rec":
-    st.title("Movie Recommendation System")
-    st.write("A recommender system to suggest movies based on user preferences.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Recommender System Study on MovieLens Dataset
+
+    In today's world, **recommender systems** play a pivotal role in shaping user experiences, whether it's suggesting the next movie to watch, product to buy, or music to listen to. In this project, I conducted a comprehensive study of **recommender system algorithms**, focusing on their performance on the **MovieLens dataset**. The project culminated in building a **hybrid recommender system** and scaling it with **Apache Spark** to process large datasets efficiently.
+
+    ### Project Overview
+    The goal of this project was to compare various types of recommender systems, from **collaborative filtering** to **content-based filtering**, and assess their strengths and weaknesses. After analyzing the performance of these systems on a smaller dataset (100,000 ratings), I developed a **hybrid model** combining **Content-based KNN** and **Restricted Boltzmann Machine (RBM)**. Finally, I scaled the system to handle **20 million ratings** using **Apache Spark**, demonstrating the power of big data processing.
+
+    ### Key Features
+
+    #### 1. Exploring Different Recommender Systems
+    The project started with an in-depth comparison of different **recommender system algorithms**, including **collaborative filtering**, **content-based filtering**, and **matrix factorization**. Each approach was tested on the **MovieLens 100K** dataset, with results carefully analyzed to identify the pros and cons of each method.
+
+    #### 2. Hybrid Recommender System with Content KNN and RBM
+    Based on the initial analysis, I selected two high-performing approaches—**Content-based KNN** and **Restricted Boltzmann Machine (RBM)**—to create a **hybrid recommender system**. The hybrid model combined the strengths of both techniques, achieving higher accuracy in predicting user preferences and providing more personalized recommendations.
+
+    #### 3. Scaling with Apache Spark
+    To tackle the challenge of processing **20 million ratings**, I used **Apache Spark** to scale the hybrid model. Spark's distributed computing capabilities enabled efficient processing of large datasets without compromising performance. The scaled system produced **improved results**, highlighting the importance of combining hybrid approaches with big data frameworks for better scalability and performance.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Apache Spark</div>
+        <div class="tag">Content-based KNN</div>
+        <div class="tag">Restricted Boltzmann Machine (RBM)</div>
+        <div class="tag">Collaborative Filtering</div>
+        <div class="tag">MovieLens Dataset</div>
+        <div class="tag">Recommender Systems</div>
+        <div class="tag">Hybrid Models</div>
+        <div class="tag">Big Data Processing</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Impact
+    This project provided valuable insights into the **performance of different recommender system algorithms** and demonstrated the effectiveness of **hybrid models** in improving prediction accuracy. By scaling the model with **Apache Spark**, the project also showcased how **big data** can be leveraged to enhance both performance and scalability, making it a critical solution for industries relying on massive datasets, such as streaming services.
+    """)
+
 
 elif selected_page == "Glasgow":
     # Custom CSS for tag-style words
