@@ -370,8 +370,79 @@ elif selected_page == "Anonymization":
 
 
 elif selected_page == "Movie":
-    st.title("Movie Revenue Prediction")
-    st.write("Predicting movie revenue based on various features.")
+    # Custom CSS for tag-style words
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Movie Revenue Prediction Web App
+
+    This interactive web app allows users to predict the box office revenue of a movie based on various factors such as the director, cast, genre, and runtime. It also accounts for **inflation adjustments** and **trend analysis** to predict the gross revenue in **2024**, offering a realistic forecast based on historical data and future projections.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Streamlit</div>
+        <div class="tag">AWS (EC2)</div>
+        <div class="tag">XGBoost</div>
+        <div class="tag">LightGBM</div>
+        <div class="tag">KNN</div>
+        <div class="tag">Cosine Similarity</div>
+        <div class="tag">Feature Engineering</div>
+        <div class="tag">Data Augmentation</div>
+        <div class="tag">Sprse Matrix</div>
+        <div class="tag">Trend Analysis</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    The web app offers a **user-friendly interface** where users can input various movie-related features (such as **director**, **actors**, **genre**, **certificate**, and **runtime**) and receive a prediction of the movie’s potential revenue. The model adjusts for **inflation** and uses **trend analysis** to project the **gross revenue in 2024**, making the predictions both realistic and forward-looking.
+
+    ### Key Features
+
+    #### 1. Creative Feature Engineering
+    Handling **categorical features** such as directors and actors required advanced **feature engineering** and **data augmentation**. The model deals with **sparse matrices**, creating meaningful relationships between features like director-actor pairings and genre combinations, enriching the dataset to provide accurate predictions.
+
+    #### 2. Algorithm Experiments and Custom KNN Approach
+    Initially, I experimented with popular algorithms like **XGBoost** and **LightGBM**, but ultimately implemented a **custom KNN-based approach** using **cosine similarity**. This method compares new movies against similar ones, estimating expected revenue by analyzing factors like cast, genre, and runtime. The combination of traditional algorithms and custom modeling allowed for greater flexibility and accuracy in the predictions.
+
+    #### 3. Inflation Adjustment and 2024 Trend Prediction
+    The model adjusts the **historical gross revenue** figures to match the expected **2024 value**. By applying **inflation rates** and conducting **trend analysis** based on box office patterns, the predictions account for future changes in movie revenue dynamics. This ensures that users get a **realistic prediction** of how much a movie could gross in 2024, reflecting both past trends and projected future growth.
+
+    #### 4. User-Friendly Deployment on Streamlit
+    The entire model is deployed using **Streamlit**, providing a clean, interactive interface for users to input movie features and get real-time predictions. Hosted on **AWS EC2**, the app is scalable, ensuring fast and reliable performance.
+
+    ### Impact
+    This web app provides a fun and interactive way to explore the factors that contribute to a movie’s success at the box office. It accounts for both **inflation adjustments** and **2024 trend projections**, offering realistic and forward-looking predictions. The project highlights creative problem-solving through **feature engineering**, **custom algorithms**, and the ability to deploy a user-friendly **machine learning model**.
+    """)
+
+
 
 elif selected_page == "Fraud":
     st.title("Credit Card Fraud Detection")
