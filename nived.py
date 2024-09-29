@@ -301,7 +301,7 @@ elif selected_page == "YouTube":
     These **NLP-based word clouds** break down the most common phrases used in comments with **positive**, **negative**, and **overall** sentiments. This allows users to quickly see recurring themes in the audience’s feedback. The result is a visual representation of the conversation happening around a video.
 
     #### 4. Bigram Topic Extraction
-    Using advanced NLP techniques, I extracted the top 20 topics from the comments. Each topic is plotted in an interactive chart. When users click on a topic, they can view the most liked and replied comments discussing that theme. This provides deeper insight into what specific parts of the video audience members are reacting to the most.
+    Using advanced NLP techniques, top 20 topics from the comments are extracted. Each topic is plotted in an interactive chart. When users click on a topic, they can view the most liked and replied comments discussing that theme. This provides deeper insight into what about the video the audience members are reacting to the most - what they hated, what they loved and what they wanted to see.
     """)
     st.image("images/yt topics.png", caption="Popular Topics Chart Example", use_column_width=True)
 
