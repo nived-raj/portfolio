@@ -789,5 +789,63 @@ elif selected_page == "Alcohol":
 
 
 elif selected_page == "SyncOrg":
-    st.title("Data Management & Workflow Optimization for SyncOrg")
-    st.write("Optimizing data management and workflows for SyncOrg.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Data Management & Workflow Optimization for SyncOrg
+
+    This project involved designing an efficient **data management framework** for **SyncOrg**, a company that gathered customer data from various sources and in different formats. My role was to analyze current workflows, recommend improvements, and propose a centralized system to manage customer data effectively.
+
+    ### Key Contributions
+
+    - **CRM Software Analysis**: Conducted a thorough analysis of various **Customer Relationship Management (CRM)** tools available on the market, evaluating them based on SyncOrg's specific requirements. Recommended the best CRM solution that could integrate with their existing processes and systems.
+
+    - **Framework Proposal**: Designed a comprehensive data management framework where customer data would be:
+    1. **Gathered** from multiple sources,
+    2. **Validated** to ensure data quality,
+    3. **Converted** into a desirable format, and
+    4. **Stored** in a **centralized database**, with automation built in to handle the process seamlessly.
+
+    - **Workflow Optimization**: Suggested workflow optimizations that would reduce manual data handling and ensure that data from different departments flowed smoothly into a **single system**.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Data Management</div>
+        <div class="tag">CRM Analysis</div>
+        <div class="tag">Workflow Optimization</div>
+        <div class="tag">Automation</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Impact
+    The proposed framework streamlined SyncOrg’s **customer data management** process, reducing redundancy and manual effort while improving data quality and accessibility. The recommendation for a new CRM system helped the company move towards a more **centralized** and **efficient data management system**, enhancing overall customer relationship management and workflow efficiency.
+    """)
+
