@@ -406,14 +406,19 @@ elif selected_page == "Movie":
     st.write("""
     # Boxoffice Revenue Prediction Interactive Web App
 
+    """)
+
+    st.markdown("""
+    **Check out the Live App!** 👉 [Box Office Prediction Web App](https://boxofficeprediction.streamlit.app/)
+    """)
+
+    st.write("""
     This interactive web app allows users to predict the box office revenue of a movie based on various factors such as the director, cast, genre, and runtime. It also accounts for **inflation adjustments** and **trend analysis** to predict the gross revenue in **2024**, offering a realistic forecast based on historical data and future projections.
 
     ### Tools & Technologies
     """)
 
-    st.markdown("""
-    **Check out the Live App!** 👉 [Box Office Prediction Web App](https://boxofficeprediction.streamlit.app/)
-""")
+    
 
 
     # Tools & Technologies Tags
