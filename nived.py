@@ -347,10 +347,18 @@ elif selected_page == "Anonymization":
     """, unsafe_allow_html=True)
 
     # Continue with Project Description
+
+    
+
     st.write("""
     ### Project Overview
     In response to the need for secure, anonymized health records that comply with **GDPR regulations**, this project developed a robust tool to anonymize data without compromising its utility for research. The solution anonymized data for over **10,000 individuals**, ensuring secure data sharing within the healthcare sector while providing flexibility for broader applications in other industries.
+    """)
+    st.markdown("""
+    <iframe src="https://1drv.ms/p/c/b1cefbb29bc4dda5/IQQ7jcn1gTJOTrP2Ig5UYBypARWDeSgpVqDo8jWyVG06240?em=2&amp;wdAr=1.7777777777777777" width="800px" height="450px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+    """, unsafe_allow_html=True)
 
+    st.write("""
     ### Key Features
 
     #### 1. Hybrid Anonymization System
