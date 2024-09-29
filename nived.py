@@ -38,9 +38,9 @@ def nav_menu():
     contact_clicked = st.sidebar.button("Contact Me")
     
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
-    youtube_clicked = st.sidebar.button("YouTube Sentiment Analysis")
-    anonymization_clicked = st.sidebar.button("Text Data Anonymization")
-    movie_prediction_clicked = st.sidebar.button("Movie Revenue Prediction")
+    youtube_clicked = st.sidebar.button("Real-Time YouTube Sentiment Analytics")
+    anonymization_clicked = st.sidebar.button("Text Data Anonymization for Healthcare")
+    movie_prediction_clicked = st.sidebar.button("Boxoffice Prediction")
     fraud_detection_clicked = st.sidebar.button("Credit Card Fraud Detection")
     spotify_prediction_clicked = st.sidebar.button("Spotify Song Genre Prediction")
     crypto_prediction_clicked = st.sidebar.button("Crypto Prediction")
@@ -234,7 +234,7 @@ elif selected_page == "YouTube":
         .tag-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -278,7 +278,7 @@ elif selected_page == "YouTube":
     A unique feature that analyzes the most discussed 10-second intervals of a video. Each bar in the chart represents a time segment, and by clicking on it, users can dive into the most liked comments during that interval. This reveals what parts of the video generated the most discussion—whether it’s a dramatic reveal or a controversial moment.
 
     #### 2. Custom Sentiment Analysis
-    The backbone of the dashboard is a custom-built sentiment analyzer that categorizes comments into verdicts like **“High Hype”** or **“Mostly Negative”**. What makes this even more powerful is the way it weighs comments based on engagement (e.g., likes). I also integrated **emoji sentiment extraction**, adding another layer of depth to understand nuanced audience reactions.
+    The backbone of the dashboard is a custom-built sentiment analyzer that avoids spams, off topic comments - and calcualtes sentiment scores per comment. It is then used to caclulate the overall sentiment score - giving weight to comments per likes which gives comments most people agree on, more say in the final sentment score. Using this, the positive to negative proportion is calculated - and the scores are shown in a doughnut chart - which also assign a verdict like **“High Hype”** or **“Mostly Negative”** to the video.  I also integrated **emoji sentiment extraction** becuase emojies these days carry a lot of important sentiment that users express, adding another layer of depth to understand nuanced audience reactions.
 
     #### 3. Interactive Word Clouds
     These **NLP-based word clouds** break down the most common phrases used in comments with **positive**, **negative**, and **overall** sentiments. This allows users to quickly see recurring themes in the audience’s feedback. The result is a visual representation of the conversation happening around a video.
@@ -297,13 +297,77 @@ elif selected_page == "YouTube":
 
 
 elif selected_page == "Anonymization":
-    st.title("Text Data Anonymization for Health Records")
-    st.write("Ensuring compliance with GDPR by anonymizing sensitive health data.")
+    # Custom CSS for tag-style words
     st.markdown("""
-    <iframe src="https://1drv.ms/p/c/b1cefbb29bc4dda5/IQQ7jcn1gTJOTrP2Ig5UYBypARWDeSgpVqDo8jWyVG06240?em=2&amp;wdAr=1.7777777777777777" 
-    width="714px" height="432px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
-    </iframe>
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
     """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Text Data Anonymization & Analysis for Healthcare Services in Scotland
+
+    This project, conducted in partnership with the **Argyll & Bute Health and Social Care Partnership (NHS)**, focused on developing a highly secure and GDPR-compliant solution to anonymize unstructured Electronic Health Records (EHR) data. By ensuring **100% removal of Personally Identifiable Information (PII)**, the tool enabled safe data sharing for research without compromising the utility of the data.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">spaCy</div>
+        <div class="tag">Named-Entity Recognition (NER)</div>
+        <div class="tag">Natural Language Processing (NLP)</div>
+        <div class="tag">Application Development</div>
+        <div class="tag">Text Analytics</div>
+        <div class="tag">Regex</div>
+        <div class="tag">Custom Algorithm</div>
+        <div class="tag">GDPR Compliance</div>
+        <div class="tag">Data Anonymization</div>
+        <div class="tag">Executable Workflow</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    In response to the need for secure, anonymized health records that comply with **GDPR regulations**, this project developed a robust tool to anonymize data without compromising its utility for research. The solution anonymized data for over **10,000 individuals**, ensuring secure data sharing within the healthcare sector while providing flexibility for broader applications in other industries.
+
+    ### Key Features
+
+    #### 1. Hybrid Anonymization System
+    This project introduced a **two-layer anonymization system** using **spaCy’s Named Entity Recognition (NER)** combined with a **custom dictionary-based filter**. This approach allowed the tool to tag and remove sensitive data like names, addresses, and other PII from unstructured text, while still maintaining context and ensuring the data remained useful for research purposes.
+
+    #### 2. Complete PII Removal with Perfect Recall
+    The algorithm achieved a **perfect recall (1.0)**, ensuring no personal data was left exposed. The **transparency** of the tool was a significant factor in its compliance with GDPR standards, making sure every step of the anonymization process was trackable and verifiable.
+
+    #### 3. Secure Workflow for Low-Clearance Users
+    A standout feature of the tool was its **secure workflow**. The tool was designed to be used by personnel with **lower security clearance**, such as IT engineers, without exposing them to sensitive information. The anonymization process was fully encapsulated, ensuring that intermediate results and final outputs could **never be traced back to any individual**. This design allowed safe operation and handling of the tool without risking PII exposure, even in environments where users did not have high-level data access.
+
+    #### 4. Flexible, Adaptable Design
+    The **layered architecture** of the tool makes it easily adaptable for use across various industries beyond healthcare. The flexibility in its design allows for the anonymization of different types of unstructured data, making it applicable in fields such as finance, legal, and social services.
+
+    ### Impact
+    The tool anonymized the records of over **10,000 individuals**, facilitating secure and compliant data sharing for healthcare research. This project not only achieved **distinction** but was also praised for its innovative design and potential applications in other sectors. It demonstrated how cutting-edge data anonymization techniques can be deployed in real-world settings to handle sensitive data responsibly and effectively.
+    """)
+
 
 elif selected_page == "Movie":
     st.title("Movie Revenue Prediction")
