@@ -179,7 +179,7 @@ elif selected_page == "Skills":
             skill_card(title, content)
         i += 1
 
-    st.write("<br><br>")
+    st.write(" ")
     st.write("### Professional Experience")
     st.write("""
 
@@ -207,7 +207,10 @@ elif selected_page == "Skills":
 
 elif selected_page == "Contact":
     st.title("Contact Me")
-    st.write("[LinkedIn](https://www.linkedin.com/in/nivedraj)")
+    st.write("Email: nived2033@gmail.com")
+    st.write("Phone: +44 7824819279")
+    st.write("[LinkedIn](www.linkedin.com/in/nived-raj-2033da)")
+    
 
 elif selected_page == "YouTube":
     st.title("YouTube Comment Sentiment Analysis")
