@@ -218,7 +218,7 @@ elif selected_page == "Contact":
     st.write("""
     - **Phone**: +44 7824819279 
     - **Email**: nived2033@gmail.com 
-    - **LinkedIn**: [linkedin.com/in/nivedraj](https://nivedraj.streamlit.app/~/+/www.linkedin.com/in/nived-raj-2033da)
+    - **LinkedIn**: [linkedin.com/in/nivedraj](www.linkedin.com/in/nived-raj-2033da)
     """)
 
     
