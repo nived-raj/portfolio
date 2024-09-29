@@ -529,8 +529,73 @@ elif selected_page == "Spotify":
     st.write("Predicting the genre of Spotify songs using machine learning models.")
 
 elif selected_page == "Crypto":
-    st.title("Crypto Prediction")
-    st.write("Predicting cryptocurrency market trends using LSTM and sentiment analysis.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Cryptocurrency Price Prediction | Academic Competetion Project
+
+    As the **team leader** of a group of five, I led the development of a model to predict cryptocurrency price movements based on both **financial data** and **sentiment analysis** from social media mentions. The project explored **traditional machine learning** and **deep learning** approaches to forecast price direction in the highly volatile cryptocurrency market.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Random Forest</div>
+        <div class="tag">LSTM</div>
+        <div class="tag">NLP</div>
+        <div class="tag">Sentiment Analysis</div>
+        <div class="tag">Financial Time Series</div>
+        <div class="tag">Social Media Data</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    The goal of this project was to predict the **upward or downward movement** of cryptocurrency prices, specifically **Bitcoin**, using a combination of **financial time series data** and **social media sentiment analysis**. The project involved applying both traditional machine learning methods like **Random Forest** and advanced **deep learning** techniques like **LSTM** (Long Short-Term Memory), providing valuable insights into the challenges of forecasting highly volatile assets like cryptocurrencies.
+
+    ### Key Features
+
+    #### 1. Movement Prediction with Random Forest
+    We used a **Random Forest classifier** to predict whether the price of Bitcoin would go **up** or **down** based on engineered features. These features included the **percentage change** from the previous days, **trading volume**, and other financial metrics. The model was designed to identify patterns in the data that could indicate future price movements, providing a reliable baseline prediction method.
+
+    #### 2. Sentiment Integration for Enhanced Accuracy
+    Recognizing the impact of market sentiment on cryptocurrency prices, we incorporated **sentiment analysis** into our model. We analyzed **social media mentions** related to Bitcoin, extracting sentiment scores that reflected the overall mood of the market. By integrating these sentiment features into the model, we achieved a slight improvement in accuracy, demonstrating the influence of public opinion on short-term price movements.
+
+    #### 3. Experimenting with LSTM for Time Series Prediction
+    Given the time series nature of financial data, we also explored a **deep learning approach** using an **LSTM model**. This method used the **previous 100 days of historical data** to predict future prices. While the LSTM model showed promise, the inherent **volatility** of the cryptocurrency market limited its predictive accuracy. The experiment provided valuable insights into the challenges of applying deep learning to financial markets.
+
+    #### 4. Leading the Team and Presentation Design
+    As the team leader, I was responsible for **coordinating efforts** across the team and ensuring the timely completion of tasks. I also designed and delivered the **PowerPoint presentation**, which received the **highest grade** in the class. The clarity of the design and the structure of the presentation were specifically praised, demonstrating my ability to effectively communicate complex technical concepts.
+
+    ### Impact
+    This project not only strengthened my leadership and collaboration skills, but also gave me hands-on experience with **financial time series data**, **machine learning**, and **sentiment analysis**. The integration of **social media data** into a financial model was a key learning experience, highlighting the real-world impact of public sentiment on market movements. The project also provided valuable insights into the limitations and potential of **deep learning models** in the context of volatile markets like cryptocurrency.
+    """)
+
 
 elif selected_page == "Movie Rec":
     st.title("Movie Recommendation System")
