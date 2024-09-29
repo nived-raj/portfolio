@@ -127,20 +127,58 @@ elif selected_page == "Education":
 elif selected_page == "Skills":
     st.title("Experience and Skills")
     st.write("### Skills")
+    st.write("From machine learning to cloud deployment, these are the core tools I rely on to deliver impactful data-driven solutions.")
+    # Custom CSS for card styling
+    st.markdown("""
+        <style>
+        .skill-card {
+            background-color: #f0f0f5;
+            border: 1px solid #e1e1eb;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .skill-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4b4b4b;
+        }
+        </style>
+    """, unsafe_allow_html=True)
 
-    # List of skills
-    skills_list = [
-        "Machine Learning", "Data Science", "NLP", "Cloud Deployment (AWS)", 
-        "Python", "SQL", "Data Visualization", "Streamlit", "Dash", 
-        "Scikit-learn", "TensorFlow", "Keras"
-    ]
+    # Function to create a skill card
+    def skill_card(title, content):
+        st.markdown(f"""
+        <div class="skill-card">
+            <div class="skill-title">{title}</div>
+            <div>{content}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
-    # Create 3 columns for a neat layout
-    cols = st.columns(3)
+    # Skill categories with content
+    skills = {
+        "Programming Languages": "Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn), SQL (MySQL), R (Tidyverse), C++, HTML/CSS",
+        "Data Science & Machine Learning": "Supervised & Unsupervised Learning, Feature Engineering, Model Deployment, Hyperparameter Tuning, Cross-Validation, Imbalanced Data Techniques (SMOTE, Undersampling), XGBoost, LightGBM, Random Forest, Logistic Regression, KNN, LSTM, Time Series Analysis",
+        "Data Analytics & Visualization": "Tableau, Power BI (Dashboard Design, ETL, Data Modeling, Power Query, DAX), Altair, Excel (Advanced Formulas, Pivot Tables, VBA)",
+        "Cloud & DevOps": "AWS (EC2, S3), Streamlit, Git, GitHub",
+        "Natural Language Processing (NLP)": "spaCy, NLTK, Bigrams, Sentiment Analysis, Named Entity Recognition (NER), Custom Dictionaries, Word Clouds",
+        "Databases": "SQL (MySQL), NoSQL (MongoDB basics)",
+        "Artificial Intelligence & Deep Learning": "Neural Networks, LSTM, Time Series Forecasting, Sentiment Analysis",
+        "Mathematics & Statistics": "Probability, Statistics, Hypothesis Testing, Optimization for Analytics",
+        "Soft Skills": "Stakeholder Communication, Cross-functional Collaboration, Team Leadership, Presentations, Mentoring & Training"
+    }
 
-    # Display each skill in a column
-    for i, skill in enumerate(skills_list):
-        cols[i % 3].write(f"- {skill}")
+    # Display skills as cards in multiple columns
+    cols = st.columns(2)
+    i = 0
+    for title, content in skills.items():
+        with cols[i % 2]:
+            skill_card(title, content)
+        i += 1
+
 
 
 elif selected_page == "Contact":
