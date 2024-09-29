@@ -411,6 +411,11 @@ elif selected_page == "Movie":
     ### Tools & Technologies
     """)
 
+    st.markdown("""
+    **Check out the Live App!** 👉 [Box Office Prediction Web App](https://boxofficeprediction.streamlit.app/)
+""")
+
+
     # Tools & Technologies Tags
     st.markdown("""
     <div class="tag-container">
