@@ -211,6 +211,7 @@ elif selected_page == "Skills":
 
 elif selected_page == "Contact":
     # Introduction line
+    st.title("Contact Me")
     st.write("Feel free to reach out to me through any of the following platforms:")
 
     # Contact details
