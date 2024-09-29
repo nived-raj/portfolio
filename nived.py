@@ -690,21 +690,33 @@ elif selected_page == "Movie Rec":
     st.write("""
     # Recommender System Study on MovieLens Dataset
 
-    In today's world, **recommender systems** play a pivotal role in shaping user experiences, whether it's suggesting the next movie to watch, product to buy, or music to listen to. In this project, I conducted a comprehensive study of **recommender system algorithms**, focusing on their performance on the **MovieLens dataset**. The project culminated in building a **hybrid recommender system** and scaling it with **Apache Spark** to process large datasets efficiently.
+    In the age of streaming services, **recommender systems** have become essential for delivering personalized content. This project explored different types of recommendation engines, focusing on building and optimizing a **hybrid recommender system** using the **MovieLens dataset**. The system combined **content-based filtering** and **collaborative filtering**, ultimately scaling it with **Apache Spark** to handle large-scale data efficiently.
 
     ### Project Overview
-    The goal of this project was to compare various types of recommender systems, from **collaborative filtering** to **content-based filtering**, and assess their strengths and weaknesses. After analyzing the performance of these systems on a smaller dataset (100,000 ratings), I developed a **hybrid model** combining **Content-based KNN** and **Restricted Boltzmann Machine (RBM)**. Finally, I scaled the system to handle **20 million ratings** using **Apache Spark**, demonstrating the power of big data processing.
+
+    The project began by examining various **recommender system** approaches, including **content-based** and **collaborative filtering** models. After testing individual algorithms, I developed a **hybrid recommender system** that integrated **Content-Based KNN** and **Restricted Boltzmann Machines (RBM)** to deliver more accurate and personalized recommendations.
 
     ### Key Features
 
-    #### 1. Exploring Different Recommender Systems
-    The project started with an in-depth comparison of different **recommender system algorithms**, including **collaborative filtering**, **content-based filtering**, and **matrix factorization**. Each approach was tested on the **MovieLens 100K** dataset, with results carefully analyzed to identify the pros and cons of each method.
+    #### 1. Hybrid Recommender System: Combining RBM & Content-Based KNN
+    - **Content-Based KNN**: Utilized **Cosine Similarity** to measure the similarity between movies based on user preferences. This method allowed the system to recommend movies that share features with the ones a user has liked.
+    
+    - **Restricted Boltzmann Machines (RBM)**: Implemented **RBM** for collaborative filtering, enabling the system to predict user preferences based on patterns in user ratings and interactions.
 
-    #### 2. Hybrid Recommender System with Content KNN and RBM
-    Based on the initial analysis, I selected two high-performing approaches—**Content-based KNN** and **Restricted Boltzmann Machine (RBM)**—to create a **hybrid recommender system**. The hybrid model combined the strengths of both techniques, achieving higher accuracy in predicting user preferences and providing more personalized recommendations.
+    #### 2. Hybrid Approach
+    The combination of **Content-Based KNN** and **RBM** harnessed the strengths of both methods—content-based filtering’s focus on movie attributes and collaborative filtering’s ability to learn from user behavior—resulting in more accurate recommendations.
 
     #### 3. Scaling with Apache Spark
-    To tackle the challenge of processing **20 million ratings**, I used **Apache Spark** to scale the hybrid model. Spark's distributed computing capabilities enabled efficient processing of large datasets without compromising performance. The scaled system produced **improved results**, highlighting the importance of combining hybrid approaches with big data frameworks for better scalability and performance.
+    To handle larger datasets, I scaled the hybrid model using **Apache Spark**, which enabled the system to efficiently process and analyze the **20 million MovieLens dataset**. This ensured that recommendations were generated quickly, even with a massive amount of data.
+
+    ### Evaluation Metrics and Results
+
+    The hybrid system was evaluated using several metrics:
+    - **Mean Absolute Error (MAE)** and **Root Mean Square Error (RMSE)** to assess prediction accuracy.
+    - **Hit Rate** and **Cumulative Hit Rate** to determine how often the correct movie appeared in the top recommendations.
+    - **Diversity** and **Coverage** to ensure varied and comprehensive recommendations.
+
+    By combining **Content-Based KNN** and **RBM**, the system outperformed individual models, providing more accurate, diverse, and personalized recommendations. Additionally, **Apache Spark** improved scalability, allowing the model to process large datasets without compromising performance.
 
     ### Tools & Technologies
     """)
@@ -716,18 +728,18 @@ elif selected_page == "Movie Rec":
         <div class="tag">Apache Spark</div>
         <div class="tag">Content-based KNN</div>
         <div class="tag">Restricted Boltzmann Machine (RBM)</div>
+        <div class="tag">Cosine Similarity</div>
         <div class="tag">Collaborative Filtering</div>
         <div class="tag">MovieLens Dataset</div>
-        <div class="tag">Recommender Systems</div>
         <div class="tag">Hybrid Models</div>
-        <div class="tag">Big Data Processing</div>
+        <div class="tag">Evaluation Metrics</div>
     </div>
     """, unsafe_allow_html=True)
 
     # Continue with Project Description
     st.write("""
-    ### Impact
-    This project provided valuable insights into the **performance of different recommender system algorithms** and demonstrated the effectiveness of **hybrid models** in improving prediction accuracy. By scaling the model with **Apache Spark**, the project also showcased how **big data** can be leveraged to enhance both performance and scalability, making it a critical solution for industries relying on massive datasets, such as streaming services.
+    ### Conclusion
+    This project showcased the advantages of **hybrid recommender systems** in enhancing recommendation accuracy by combining multiple approaches. Scaling the model using **Apache Spark** demonstrated how big data processing can be leveraged to improve performance, making the system suitable for real-time, large-scale applications in the movie recommendation domain.
     """)
 
 
