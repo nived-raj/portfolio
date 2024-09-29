@@ -34,7 +34,7 @@ def nav_menu():
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
     about_clicked = st.sidebar.button("About")
     education_clicked = st.sidebar.button("Education")
-    skills_clicked = st.sidebar.button("Experience and Additional Skills")
+    skills_clicked = st.sidebar.button("Experience and Skills")
     contact_clicked = st.sidebar.button("Contact Me")
     
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
@@ -103,6 +103,10 @@ Nived Raj
 
 elif selected_page == "Education":
     st.title("Education")
+    st.write("""
+    I’ve always believed that strong foundations lead to greater heights, and my academic journey reflects that. Graduating with **Distinction** in my Master’s in Data Analytics and achieving **First Class** honors in my Computer Science Engineering degree, I’ve consistently pushed the boundaries of learning. From excelling in foundational subjects during my 10th grade (CGPA: 10) to mastering advanced data science concepts at the University of Strathclyde, my academic record speaks to my dedication and proficiency in the field.
+    """)
+
     st.markdown("""
 
     - **Master’s in Data Analytics (Distinction)**  
@@ -121,8 +125,23 @@ elif selected_page == "Education":
 
 
 elif selected_page == "Skills":
-    st.title("Experience and Additional Skills")
-    st.write("NLP, Machine Learning, Cloud Deployment.")
+    st.title("Experience and Skills")
+    st.write("### Skills")
+
+    # List of skills
+    skills_list = [
+        "Machine Learning", "Data Science", "NLP", "Cloud Deployment (AWS)", 
+        "Python", "SQL", "Data Visualization", "Streamlit", "Dash", 
+        "Scikit-learn", "TensorFlow", "Keras"
+    ]
+
+    # Create 3 columns for a neat layout
+    cols = st.columns(3)
+
+    # Display each skill in a column
+    for i, skill in enumerate(skills_list):
+        cols[i % 3].write(f"- {skill}")
+
 
 elif selected_page == "Contact":
     st.title("Contact Me")
