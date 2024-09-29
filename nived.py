@@ -180,6 +180,9 @@ elif selected_page == "Skills":
         i += 1
 
     st.write(" ")
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
     st.write("### Professional Experience")
     st.write("""
 
@@ -214,7 +217,67 @@ elif selected_page == "Contact":
 
 elif selected_page == "YouTube":
     st.title("YouTube Comment Sentiment Analysis")
-    st.write("Analyzing YouTube comments to determine the overall sentiment.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Real-Time YouTube Comment Sentiment Analytics Dashboard
+
+    This interactive dashboard is designed for marketing, advertising, and development teams to gain real-time insights into audience reactions on YouTube. Whether it’s a new movie trailer or a game reveal, this tool delivers actionable data to help teams understand how audiences engage, what excites them, and where the key moments lie.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown('<div class="tag">Python</div>', unsafe_allow_html=True)
+    st.markdown('<div class="tag">Dash</div>', unsafe_allow_html=True)
+    st.markdown('<div class="tag">AWS (EC2)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="tag">YouTube API</div>', unsafe_allow_html=True)
+    st.markdown('<div class="tag">NLP (NLTK, Bigrams, Sentiment Analysis)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="tag">Emoji Sentiment Extraction</div>', unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    The dashboard provides an intuitive interface for analyzing YouTube comments on videos, especially **trailers and reviews**. It allows users to search for a video by keyword and retrieve real-time comments. From there, the dashboard breaks down **audience sentiment**, **key discussion points**, and the most **engaging moments** of the video. This makes it especially useful for media and advertising teams who want to understand what resonates most with their target audience.
+
+    ### Key Features
+
+    #### 1. Interactive Time-Bucket Popularity Chart
+    A unique feature that analyzes the most discussed 10-second intervals of a video. Each bar in the chart represents a time segment, and by clicking on it, users can dive into the most liked comments during that interval. This reveals what parts of the video generated the most discussion—whether it’s a dramatic reveal or a controversial moment.
+
+    #### 2. Custom Sentiment Analysis
+    The backbone of the dashboard is a custom-built sentiment analyzer that categorizes comments into verdicts like **“High Hype”** or **“Mostly Negative”**. What makes this even more powerful is the way it weighs comments based on engagement (e.g., likes). I also integrated **emoji sentiment extraction**, adding another layer of depth to understand nuanced audience reactions.
+
+    #### 3. Interactive Word Clouds
+    These **NLP-based word clouds** break down the most common phrases used in comments with **positive**, **negative**, and **overall** sentiments. This allows users to quickly see recurring themes in the audience’s feedback. The result is a visual representation of the conversation happening around a video.
+
+    #### 4. Bigram Topic Extraction
+    Using advanced NLP techniques, I extracted the top 20 topics from the comments. Each topic is plotted in an interactive chart. When users click on a topic, they can view the most liked and replied comments discussing that theme. This provides deeper insight into what specific parts of the video audience members are reacting to the most.
+
+    ### Impact
+    The dashboard gives marketing teams a clear view of how their content is performing and what audiences are buzzing about. By analyzing audience engagement in real time, companies can fine-tune their messaging, pinpoint popular segments, and gain insights into both positive and negative feedback.
+
+    What’s more, the dashboard is not limited to YouTube. Its design is adaptable for other platforms like **Twitter** and **Instagram**, as well as industries beyond entertainment, including **product reviews**, **news events**, and **consumer feedback**.
+
+    This project highlights my ability to blend **data science**, **NLP**, and **cloud computing** to build a scalable tool that transforms raw comments into meaningful insights. Stay tuned for more updates and screenshots!
+    """)
+
 
 elif selected_page == "Anonymization":
     st.title("Text Data Anonymization for Health Records")
