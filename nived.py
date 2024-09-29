@@ -647,11 +647,21 @@ elif selected_page == "Crypto":
     </div>
     """, unsafe_allow_html=True)
 
+    
+
+
     # Continue with Project Description
     st.write("""
     ### Project Overview
     The goal of this project was to predict the **upward or downward movement** of cryptocurrency prices, specifically **Bitcoin**, using a combination of **financial time series data** and **social media sentiment analysis**. The project involved applying both traditional machine learning methods like **Random Forest** and advanced **deep learning** techniques like **LSTM** (Long Short-Term Memory), providing valuable insights into the challenges of forecasting highly volatile assets like cryptocurrencies.
+    """)
 
+    st.markdown("""
+    <iframe src="https://1drv.ms/p/c/b1cefbb29bc4dda5/IQRG3RkutIScSZHVFF4cIIZcAXyQvwGYdNUAvBtNh1B0H4M?em=2&amp;wdAr=1.7777777777777777" width="800px" height="450px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+    """, unsafe_allow_html=True)
+
+
+    st.write("""
     ### Key Features
 
     #### 1. Movement Prediction with Random Forest
