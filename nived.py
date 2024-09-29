@@ -182,7 +182,7 @@ elif selected_page == "Skills":
     st.write(" ")
     st.write(" ")
     st.write(" ")
-    st.write(" ")
+    st.write("---")
     st.write("### Professional Experience")
     st.write("""
 
