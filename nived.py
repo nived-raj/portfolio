@@ -565,10 +565,19 @@ elif selected_page == "Spotify":
         </style>
     """, unsafe_allow_html=True)
 
+    
+
+
     # Project Description
     st.write("""
     # Spotify Song Genre Prediction (Kaggle Competition – 2nd Place)
+    """)
 
+    st.markdown("""
+    **Check out the Kaggle Leaderboard!** 👉 [Spotify Genre Prediction Leaderboard](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2022/leaderboard)
+    """)
+
+    st.write("""
     This project involved building a **genre prediction model** for Spotify songs using features such as the artist, release year, and various song attributes like energy, duration, and popularity. Competing in a **Kaggle competition**, I achieved **2nd place**, showcasing my ability to work with real-world data, optimize model performance, and deliver high accuracy in a competitive environment.
 
     ### Tools & Technologies
