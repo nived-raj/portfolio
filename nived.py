@@ -102,7 +102,7 @@ Nived Raj
 """)
 
 
-elif selected_page == "Education":
+elif selected_page == "🎓Education":
     st.title("Education")
     st.write("""
     I’ve always believed that strong foundations lead to greater heights, and my academic journey reflects that. Graduating with **Distinction** in my Master’s in Data Analytics and achieving **First Class** honors in my Computer Science Engineering degree, I’ve consistently pushed the boundaries of learning. From excelling in foundational subjects during my 10th grade (CGPA: 10) to mastering advanced data science concepts at the University of Strathclyde, my academic record speaks to my dedication and proficiency in the field.
@@ -216,9 +216,9 @@ elif selected_page == "Contact":
 
     # Contact details
     st.write("""
-    - **Phone**: +44 7824819279 
-    - **Email**: nived2033@gmail.com 
-    - **LinkedIn**: [linkedin.com/in/nivedraj](https://www.linkedin.com/in/nived-raj-2033da)
+    📱 **Phone**: +44 7824819279 
+    📧 **Email**: nived2033@gmail.com 
+    👥 **LinkedIn**: [linkedin.com/in/nivedraj](https://www.linkedin.com/in/nived-raj-2033da)
     """)
 
     
