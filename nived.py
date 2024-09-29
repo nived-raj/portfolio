@@ -179,7 +179,7 @@ elif selected_page == "Skills":
             skill_card(title, content)
         i += 1
 
-
+    st.write("<br><br>")
     st.write("### Professional Experience")
     st.write("""
 
