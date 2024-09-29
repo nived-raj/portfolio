@@ -525,8 +525,74 @@ elif selected_page == "Fraud":
 
 
 elif selected_page == "Spotify":
-    st.title("Spotify Song Genre Prediction")
-    st.write("Predicting the genre of Spotify songs using machine learning models.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Spotify Song Genre Prediction (Kaggle Competition – 2nd Place)
+
+    This project involved building a **genre prediction model** for Spotify songs using features such as the artist, release year, and various song attributes like energy, duration, and popularity. Competing in a **Kaggle competition**, I achieved **2nd place**, showcasing my ability to work with real-world data, optimize model performance, and deliver high accuracy in a competitive environment.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Scikit-Learn</div>
+        <div class="tag">LinearSVC</div>
+        <div class="tag">Logistic Regression</div>
+        <div class="tag">Random Forest</div>
+        <div class="tag">GridSearchCV</div>
+        <div class="tag">Cross-Validation</div>
+        <div class="tag">Feature Selection</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    The goal of this project was to accurately predict the **genre** of Spotify songs based on a variety of features, such as artist, song attributes, and popularity metrics. By employing multiple machine learning models and fine-tuning them, I managed to achieve a **Kaggle score of 0.68421**, placing **2nd** in the competition.
+
+    ### Key Features
+
+    #### 1. Algorithm Tuning with Linear SVC
+    After testing several machine learning algorithms, including **Logistic Regression** and **Random Forest**, I found that **Linear SVC (Support Vector Classification)** outperformed more complex models in terms of accuracy. By carefully tuning the **hyperparameters** using **GridSearchCV**, I optimized the Linear SVC model to achieve the best possible accuracy on the dataset. This demonstrated that sometimes simpler models can outperform more intricate algorithms, especially on high-dimensional data like song attributes.
+
+    #### 2. Cross-Validation & Feature Selection for Consistent Results
+    To prevent overfitting and ensure that the model generalizes well, I implemented **cross-validation** techniques across multiple folds. This not only helped in evaluating the robustness of the model but also in fine-tuning its performance. Additionally, **feature selection** was applied to eliminate irrelevant or redundant features, leading to more efficient training and consistent results across the test set.
+
+    #### 3. Model Comparison and Selection
+    While experimenting with models, I found that **Linear SVC** consistently delivered the highest accuracy compared to **Logistic Regression** and **Random Forest**. By striking a balance between model complexity and performance, the Linear SVC model outperformed more complex algorithms like Random Forest, highlighting the importance of algorithm selection based on the dataset at hand.
+
+    ### Results
+    The final model achieved a **Kaggle score of 0.68421** with **Linear SVC**, securing **2nd place** in the competition. This score demonstrated the effectiveness of the model in classifying songs by genre and highlighted my ability to tune and optimize machine learning models to handle high-dimensional data.
+
+    ### Impact
+    This project emphasized the importance of **model tuning**, **feature engineering**, and **cross-validation** in achieving top-tier results. Placing **2nd** in a competitive Kaggle leaderboard further showcased my ability to apply machine learning techniques in a real-world context, optimizing performance and demonstrating mastery in model selection and evaluation.
+    """)
+
 
 elif selected_page == "Crypto":
     # Custom CSS for tag-style words
@@ -602,8 +668,65 @@ elif selected_page == "Movie Rec":
     st.write("A recommender system to suggest movies based on user preferences.")
 
 elif selected_page == "Glasgow":
-    st.title("Real-Time View of Glasgow City Centre")
-    st.write("A real-time dashboard for monitoring activity in Glasgow city center.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Real-Time View of Glasgow City Centre Busy-ness Using Data
+
+    This project, developed in collaboration with **Glasgow City Council**, aimed to provide a real-time view of the city's busyness by utilizing data visualization techniques. I led a team of 4 in creating a **Real-Time Dashboard** that delivered actionable insights into the flow of people and activities across the city.
+
+    ### Key Contributions
+
+    - **Team Leadership**: I successfully led a **team of 4**, managing the project from planning to execution, ensuring all team members collaborated effectively to meet the client’s needs.
+    
+    - **Real-Time Dashboard Development**: We built a real-time dashboard using **Tableau** and **Python** to visualize city busyness data, allowing city officials to track and analyze busy areas in real time.
+
+    - **Data Source Optimization**: I suggested improvements for existing data collection methods and proposed new data sources, providing **cost estimates** and timelines for implementation, helping the council optimize their data infrastructure.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Tableau</div>
+        <div class="tag">Python</div>
+        <div class="tag">Real-Time Data</div>
+        <div class="tag">Geographical Data Visualization</div>
+        <div class="tag">Data Source Optimization</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Learning Outcomes
+    st.write("""
+    ### Learning Outcomes
+    Through this project, I gained valuable experience in:
+    - **Visualizing geographical data** effectively, using tools like Tableau to represent real-time data in a meaningful way.
+    - **Working with real-time data**, ensuring that the dashboard accurately reflected the city’s busyness as events unfolded.
+    - **Client collaboration** and how to optimize data sources for real-time analytics.
+    """)
+
 
 elif selected_page == "Alcohol":
     st.title("An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times")
