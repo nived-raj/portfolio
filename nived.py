@@ -574,7 +574,7 @@ elif selected_page == "Spotify":
     """)
 
     st.markdown("""
-    **Check out the Kaggle Leaderboard!** 👉 [Spotify Genre Prediction Leaderboard](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2022/leaderboard)
+    **Check out the Kaggle Competetion!** 👉 [Spotify Genre Prediction Leaderboard](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2022/overview)
     """)
 
     st.write("""
@@ -601,7 +601,11 @@ elif selected_page == "Spotify":
     st.write("""
     ### Project Overview
     The goal of this project was to accurately predict the **genre** of Spotify songs based on a variety of features, such as artist, song attributes, and popularity metrics. By employing multiple machine learning models and fine-tuning them, I managed to achieve a **Kaggle score of 0.68421**, placing **2nd** in the competition.
+    """)
 
+    st.image("images/Leaderboard Kaggle.png", caption="Kaggle Leaderboard", use_column_width=True)
+
+    st.write("""
     ### Key Features
 
     #### 1. Algorithm Tuning with Linear SVC
