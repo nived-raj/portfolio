@@ -255,7 +255,14 @@ elif selected_page == "YouTube":
         <div class="tag">Dash</div>
         <div class="tag">AWS (EC2)</div>
         <div class="tag">YouTube API</div>
-        <div class="tag">NLP (NLTK, Bigrams, Sentiment Analysis)</div>
+        <div class="tag">Interactive Dashboard</div>
+        <div class="tag">Friendly UI</div>
+        <div class="tag">NLP</div>
+        <div class="tag">NLTK</div>
+        <div class="tag">Topic Extraction</div>
+        <div class="tag">Sentiment Analysis</div>
+        <div class="tag">Live API Integration</div>
+        <div class="tag">Custom Algorithm</div>
         <div class="tag">Emoji Sentiment Extraction</div>
     </div>
     """, unsafe_allow_html=True)
