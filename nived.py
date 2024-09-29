@@ -225,7 +225,7 @@ elif selected_page == "YouTube":
             padding: 5px 10px;
             margin: 5px;
             background-color: #f0f0f5;
-            border-radius: 15px;
+            border-radius: 6px;
             border: 1px solid #ccc;
             font-size: 14px;
             color: #333;
