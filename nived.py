@@ -215,11 +215,12 @@ elif selected_page == "Contact":
     st.write("Feel free to reach out to me through any of the following platforms:")
 
     # Contact details
-    st.write("""
-    📱 **Phone**: +44 7824819279 
-    📧 **Email**: nived2033@gmail.com 
-    👥 **LinkedIn**: [linkedin.com/in/nivedraj](https://www.linkedin.com/in/nived-raj-2033da)
-    """)
+    st.write("""📱 **Phone**: +44 7824819279 """)
+    st.write("""📧 **Email**: nived2033@gmail.com  """)
+    st.write("""👥 **LinkedIn**: [linkedin.com/in/nivedraj](https://www.linkedin.com/in/nived-raj-2033da) """)
+    
+    
+    
 
     
 
