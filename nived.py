@@ -31,6 +31,7 @@ st.markdown("""
 
 # Sidebar navigation
 def nav_menu():
+    st.sidebar.markdown("<h1>Nived Raj</h1>", unsafe_allow_html=True)
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
     about_clicked = st.sidebar.button("About")
     education_clicked = st.sidebar.button("Education")
@@ -395,7 +396,7 @@ elif selected_page == "Movie":
 
     # Project Description
     st.write("""
-    # Movie Revenue Prediction Web App
+    # Boxoffice Revenue Prediction Interactive Web App
 
     This interactive web app allows users to predict the box office revenue of a movie based on various factors such as the director, cast, genre, and runtime. It also accounts for **inflation adjustments** and **trend analysis** to predict the gross revenue in **2024**, offering a realistic forecast based on historical data and future projections.
 
@@ -445,8 +446,83 @@ elif selected_page == "Movie":
 
 
 elif selected_page == "Fraud":
-    st.title("Credit Card Fraud Detection")
-    st.write("A machine learning model designed to detect fraudulent credit card transactions.")
+    # Custom CSS for tag-style words
+    st.markdown("""
+        <style>
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f0f0f5;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Project Description
+    st.write("""
+    # Credit Card Fraud Detection
+
+    This project focused on predicting fraudulent credit card transactions using an **imbalanced dataset**, where only **1.8%** of the transactions were flagged as fraud. By employing advanced machine learning techniques, the project successfully tackled the challenges of class imbalance, optimizing model performance to improve fraud detection for real-world financial systems.
+
+    ### Tools & Technologies
+    """)
+
+    # Tools & Technologies Tags
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">XGBoost</div>
+        <div class="tag">LightGBM</div>
+        <div class="tag">Logistic Regression</div>
+        <div class="tag">Random Forest</div>
+        <div class="tag">SMOTE</div>
+        <div class="tag">SMOTE-Tomek</div>
+        <div class="tag">iForest</div>
+        <div class="tag">GridSearchCV</div>
+        <div class="tag">RandomizedSearchCV</div>
+        <div class="tag">Isolation Forest</div>
+        <div class="tag">Class Imbalance Techniques</div>
+        <div class="tag">Outlier Detection</div>
+        <div class="tag">PCA</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Continue with Project Description
+    st.write("""
+    ### Project Overview
+    The goal of this project was to build a model capable of accurately predicting **fraudulent transactions** from a highly **imbalanced dataset**, where fraud accounted for only **1.8%** of the transactions. The features were **anonymized** and reduced using **PCA**, adding an additional challenge to feature interpretation and model development.
+
+    ### Key Features
+
+    #### 1. Advanced Class Imbalance Handling
+    Addressing class imbalance was a major challenge, given the highly skewed nature of the dataset. I applied **SMOTE** (Synthetic Minority Over-sampling Technique) and **SMOTE-Tomek** to oversample the minority class (fraud cases) and remove overlapping majority class data points. Additionally, **undersampling** was implemented to reduce the imbalance further, helping models learn more effectively. The combination of these techniques ensured a **balanced dataset**, leading to improved performance in fraud detection.
+
+    #### 2. Model Optimization with GridSearchCV and RandomizedSearchCV
+    The models were tuned extensively using **GridSearchCV** and **RandomizedSearchCV** to identify the best hyperparameters. I experimented with a variety of machine learning models, including **XGBoost**, **LightGBM**, **Logistic Regression**, and **Random Forest**, optimizing them for **recall** and **AUC-ROC**. Special attention was paid to model performance on the minority (fraud) class, ensuring that the models were not biased toward the majority class (non-fraud).
+
+    #### 3. Isolation Forest for Outlier Detection
+    To improve the quality of the training data, I implemented **Isolation Forest** (iForest), a powerful outlier detection method. The iForest technique identified and removed outliers, preventing them from skewing the model’s learning process. By removing noisy and irrelevant data points, the models were able to better generalize and detect true fraud cases.
+
+    #### 4. Custom Similarity-Based Fraud Detection
+    A custom **fraud proximity projection technique** was developed to further enhance detection. This method involved projecting fraud data points into a multidimensional space and assigning probabilities to new transactions based on their proximity to known fraud cases. The closer a new transaction was to past fraud transactions, the higher the probability of it being fraudulent. This novel approach boosted the accuracy of the predictions and helped detect previously unseen fraud patterns.
+
+    ### Results
+    The model achieved a **Kaggle score of 0.81**, demonstrating strong performance in detecting fraudulent transactions. This score represents a significant improvement over baseline models and highlights the effectiveness of the techniques applied, particularly in handling the highly imbalanced nature of the dataset.
+
+    ### Impact
+    Through this project, I gained **hands-on experience** with advanced **fraud detection techniques** and **class imbalance handling**, both of which are highly applicable in real-world financial systems. The project showcased my ability to work with **outlier detection**, **imbalanced datasets**, and various **machine learning algorithms**, providing valuable insights into how fraud detection models can be optimized and deployed at scale.
+    """)
+
 
 elif selected_page == "Spotify":
     st.title("Spotify Song Genre Prediction")
