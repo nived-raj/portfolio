@@ -216,8 +216,8 @@ elif selected_page == "Contact":
     
 
 elif selected_page == "YouTube":
-    st.title("YouTube Comment Sentiment Analysis")
     # Custom CSS for tag-style words
+    # Custom CSS for inline tag-style words
     st.markdown("""
         <style>
         .tag {
@@ -231,6 +231,11 @@ elif selected_page == "YouTube":
             color: #333;
             font-weight: bold;
         }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
         </style>
     """, unsafe_allow_html=True)
 
@@ -243,13 +248,17 @@ elif selected_page == "YouTube":
     ### Tools & Technologies
     """)
 
-    # Tools & Technologies Tags
-    st.markdown('<div class="tag">Python</div>', unsafe_allow_html=True)
-    st.markdown('<div class="tag">Dash</div>', unsafe_allow_html=True)
-    st.markdown('<div class="tag">AWS (EC2)</div>', unsafe_allow_html=True)
-    st.markdown('<div class="tag">YouTube API</div>', unsafe_allow_html=True)
-    st.markdown('<div class="tag">NLP (NLTK, Bigrams, Sentiment Analysis)</div>', unsafe_allow_html=True)
-    st.markdown('<div class="tag">Emoji Sentiment Extraction</div>', unsafe_allow_html=True)
+    # Display tags inline
+    st.markdown("""
+    <div class="tag-container">
+        <div class="tag">Python</div>
+        <div class="tag">Dash</div>
+        <div class="tag">AWS (EC2)</div>
+        <div class="tag">YouTube API</div>
+        <div class="tag">NLP (NLTK, Bigrams, Sentiment Analysis)</div>
+        <div class="tag">Emoji Sentiment Extraction</div>
+    </div>
+    """, unsafe_allow_html=True)
 
     # Continue with Project Description
     st.write("""
@@ -277,6 +286,7 @@ elif selected_page == "YouTube":
 
     This project highlights my ability to blend **data science**, **NLP**, and **cloud computing** to build a scalable tool that transforms raw comments into meaningful insights. Stay tuned for more updates and screenshots!
     """)
+
 
 
 elif selected_page == "Anonymization":
