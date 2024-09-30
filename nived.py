@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="Nived Raj",  
+    
+)
+
 # Custom CSS to force light mode and hide theme toggle
 st.markdown("""
     <style>
@@ -15,6 +20,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Custom CSS to remove button borders and change text color to black
 st.markdown("""
