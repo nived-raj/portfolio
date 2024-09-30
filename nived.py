@@ -86,7 +86,7 @@ def nav_menu():
 selected_page = nav_menu()
 
 if selected_page == "About":
-    st.title("Hey there! I’m Nived.")
+    st.title("Hey! I’m Nived.")
     st.write("""
 I am a passionate **Data Scientist** who thrives on turning raw data into meaningful insights. For me, data isn’t just numbers on a screen—it’s a tool to shape decisions, drive innovation, and solve real-world problems. Whether I’m building **predictive models**, tackling **machine learning challenges**, or exploring **NLP**, I’m always looking for new ways to push the boundaries of what data can do.
 
