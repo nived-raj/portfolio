@@ -1,5 +1,21 @@
 import streamlit as st
 
+# Custom CSS to force light mode and hide theme toggle
+st.markdown("""
+    <style>
+    /* Force light mode by hiding the theme toggle button */
+    [data-testid="stToolbar"] {
+        visibility: hidden;
+    }
+
+    /* Ensures the app loads in light mode */
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Custom CSS to remove button borders and change text color to black
 st.markdown("""
     <style>
