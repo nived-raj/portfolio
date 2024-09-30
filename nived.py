@@ -88,7 +88,7 @@ selected_page = nav_menu()
 if selected_page == "About":
     st.title("Hey there! I’m Nived.")
     st.write("""
-Iam a passionate **Data Scientist** who thrives on turning raw data into meaningful insights. For me, data isn’t just numbers on a screen—it’s a tool to shape decisions, drive innovation, and solve real-world problems. Whether I’m building **predictive models**, tackling **machine learning challenges**, or exploring **NLP**, I’m always looking for new ways to push the boundaries of what data can do.
+I am a passionate **Data Scientist** who thrives on turning raw data into meaningful insights. For me, data isn’t just numbers on a screen—it’s a tool to shape decisions, drive innovation, and solve real-world problems. Whether I’m building **predictive models**, tackling **machine learning challenges**, or exploring **NLP**, I’m always looking for new ways to push the boundaries of what data can do.
 
 My work spans across multiple domains. I’ve developed solutions for **healthcare data anonymization** to ensure privacy compliance, built **credit card fraud detection models**, and even created a **Real-Time YouTube Comment Sentiment Analysis web app** that provides instant insights into audience sentiment. Lately, I’ve been diving into **cloud deployment** with **AWS**, scaling projects to make them more efficient and accessible.
 
