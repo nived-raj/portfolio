@@ -61,7 +61,7 @@ def nav_menu():
     contact_clicked = st.sidebar.button("Contact Me")
     
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
-    youtube_clicked = st.sidebar.button("Real-Time YouTube Sentiment Analytics")
+    youtube_clicked = st.sidebar.button("Real-Time YouTube Comments Analytics")
     anonymization_clicked = st.sidebar.button("Text Data Anonymization for Healthcare")
     movie_prediction_clicked = st.sidebar.button("Boxoffice Prediction")
     fraud_detection_clicked = st.sidebar.button("Credit Card Fraud Detection")
