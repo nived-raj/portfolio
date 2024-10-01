@@ -289,10 +289,19 @@ elif selected_page == "YouTube":
         </style>
     """, unsafe_allow_html=True)
 
+    
+
     # Project Description
     st.write("""
     # Real-Time YouTube Comment Analytics Dashboard
 
+    """)
+
+    st.markdown("""
+    **Check out the Live App!** 👉 [Box Office Prediction Web App](https://boxofficeprediction.streamlit.app/)
+    """)
+
+    st.write("""
     This interactive dashboard is designed for marketing, advertising, and development teams to gain real-time insights into audience reactions on YouTube. Whether it’s a new movie trailer or a game reveal, this tool delivers actionable data to help teams understand how audiences engage, what excites them, and where the key moments lie.
 
     ### Tools & Technologies
