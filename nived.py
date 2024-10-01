@@ -51,15 +51,19 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Sidebar navigation
 def nav_menu():
     st.sidebar.markdown("<h1>Nived Raj</h1>", unsafe_allow_html=True)
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
+    
+    # Retrieve current query params to highlight the correct page
+    query_params = st.experimental_get_query_params()
+    selected_page = query_params.get("page", ["About"])[0]  # Default to "About" if no param is set
+    
     about_clicked = st.sidebar.button("About")
     education_clicked = st.sidebar.button("Education")
     skills_clicked = st.sidebar.button("Experience and Skills")
     contact_clicked = st.sidebar.button("Contact Me")
-    
+
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
     youtube_clicked = st.sidebar.button("Real-Time YouTube Comments Analytics")
     anonymization_clicked = st.sidebar.button("Text Data Anonymization for Healthcare")
@@ -72,37 +76,52 @@ def nav_menu():
     alcohol_analysis_clicked = st.sidebar.button("An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times")
     syncorg_optimization_clicked = st.sidebar.button("Data Management & Workflow Optimization for SyncOrg")
 
-    # Return the selected page
+    # Set the query params when a button is clicked
     if about_clicked:
+        st.experimental_set_query_params(page="About")
         return "About"
     elif education_clicked:
+        st.experimental_set_query_params(page="Education")
         return "Education"
     elif skills_clicked:
+        st.experimental_set_query_params(page="Skills")
         return "Skills"
     elif contact_clicked:
+        st.experimental_set_query_params(page="Contact")
         return "Contact"
     elif youtube_clicked:
+        st.experimental_set_query_params(page="YouTube")
         return "YouTube"
     elif anonymization_clicked:
+        st.experimental_set_query_params(page="Anonymization")
         return "Anonymization"
     elif movie_prediction_clicked:
+        st.experimental_set_query_params(page="Movie")
         return "Movie"
     elif fraud_detection_clicked:
+        st.experimental_set_query_params(page="Fraud")
         return "Fraud"
     elif spotify_prediction_clicked:
+        st.experimental_set_query_params(page="Spotify")
         return "Spotify"
     elif crypto_prediction_clicked:
+        st.experimental_set_query_params(page="Crypto")
         return "Crypto"
     elif movie_recommendation_clicked:
+        st.experimental_set_query_params(page="Movie Rec")
         return "Movie Rec"
     elif glasgow_city_clicked:
+        st.experimental_set_query_params(page="Glasgow")
         return "Glasgow"
     elif alcohol_analysis_clicked:
+        st.experimental_set_query_params(page="Alcohol")
         return "Alcohol"
     elif syncorg_optimization_clicked:
+        st.experimental_set_query_params(page="SyncOrg")
         return "SyncOrg"
-    else:
-        return "About"  # Default page
+    
+    return selected_page  # Default return from query params
+
 
 # Display content based on the selected page
 selected_page = nav_menu()
