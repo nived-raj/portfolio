@@ -272,7 +272,7 @@ elif selected_page == "YouTube":
 
     # Project Description
     st.write("""
-    # Real-Time YouTube Comment Sentiment Analytics Dashboard
+    # Real-Time YouTube Comment Analytics Dashboard
 
     This interactive dashboard is designed for marketing, advertising, and development teams to gain real-time insights into audience reactions on YouTube. Whether it’s a new movie trailer or a game reveal, this tool delivers actionable data to help teams understand how audiences engage, what excites them, and where the key moments lie.
 
