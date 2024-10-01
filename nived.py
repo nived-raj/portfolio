@@ -298,7 +298,7 @@ elif selected_page == "YouTube":
     """)
 
     st.markdown("""
-    **Check out the Live App!** 👉 [Box Office Prediction Web App](https://boxofficeprediction.streamlit.app/)
+    **Check out the Live App!** 👉 [Interactive YouTube Comment Analytics](https://youtube-analytics.nivedraj.com/)
     """)
 
     st.write("""
