@@ -440,7 +440,7 @@ elif selected_page == "Anonymization":
     A standout feature of the tool was its **secure workflow**. The tool was designed to be used by personnel with **lower security clearance**, such as IT engineers, without exposing them to sensitive information. The anonymization process was fully encapsulated, ensuring that intermediate results and final outputs could **never be traced back to any individual**. This design allowed safe operation and handling of the tool without risking PII exposure, even in environments where users did not have high-level data access.
 
     #### 4. Flexible, Adaptable Design
-    The **layered architecture** of the tool makes it easily adaptable for use across various industries beyond healthcare. The flexibility in its design allows for the anonymization of different types of unstructured data, making it applicable in fields such as finance, legal, and social services.
+    The **layered architecture** of the tool makes it easily adaptable for use across various industries beyond healthcare such as finance, legal, and social services. Each layer can be replaced with a stronger model, or one thats specific to use case as per requirement.
 
     ### Impact
     The tool anonymized the records of over **10,000 individuals**, facilitating secure and compliant data sharing for healthcare research. This project not only achieved **distinction** but was also praised for its innovative design and potential applications in other sectors. It demonstrated how cutting-edge data anonymization techniques can be deployed in real-world settings to handle sensitive data responsibly and effectively.
