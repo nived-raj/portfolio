@@ -356,6 +356,13 @@ elif selected_page == "YouTube":
     st.image("images/yt topics.png", caption="Popular Topics Chart Example", use_column_width=True)
 
     st.write("""
+
+    #### 5. Exploring Custom Topics
+    An even more powerful and usefull feature, where the user can search for custom topics. These can be singe topcs "backgroud Score" or long combination of keywords to be more specific "Iron man suit design". This will quickly get specific insigts that can be extremeley valuable in understanding exactly what the audience loved, hated or wanted. 
+    """)
+
+    st.write("""
+
     ### Impact
     The dashboard gives marketing teams a clear view of how their content is performing and what audiences are buzzing about. By analyzing audience engagement in real time, companies can fine-tune their messaging, pinpoint popular segments, and gain insights into both positive and negative feedback.
 
