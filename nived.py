@@ -240,7 +240,7 @@ elif selected_page == "Skills":
     - Conducted **inventory trend analysis** using Excel, providing crucial insights to support and optimize daily operations.  
     - Spearheaded training sessions on Excel and Power BI, empowering the team to leverage data for improved decision-making and operational efficiency.  
 
-    **Computer Science Tutor** | Mar 2020 – Jul 2020  
+    **Computer Science Tutor** | Mar 2021 – Jul 2021  
     **Campuzon**, Trivandrum, India  
     - Taught **Python, SQL**, and core computer science concepts to over 100 undergraduate students, delivering hands-on, practical lessons.  
     - Led workshops and personalized support sessions, adapting teaching methods to diverse learning styles and ensuring a deeper understanding of programming fundamentals.  
