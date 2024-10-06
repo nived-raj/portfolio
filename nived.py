@@ -358,7 +358,8 @@ elif selected_page == "YouTube":
     st.write("""
 
     #### 5. Exploring Custom Topics
-    An even more powerful and usefull feature, where the user can search for custom topics. These can be singe topcs "backgroud Score" or long combination of keywords to be more specific "Iron man suit design". This will quickly get specific insigts that can be extremeley valuable in understanding exactly what the audience loved, hated or wanted. 
+    An even more powerful and useful feature, where the user can search for custom topics. These can be single topics "background Score" or a long combination of keywords to be more specific like "Iron man suit design". This will quickly get specific insights that can be extremely valuable in understanding exactly what the audience loved, hated or wanted.
+ 
     """)
 
     st.write("""
