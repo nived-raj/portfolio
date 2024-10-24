@@ -228,24 +228,14 @@ elif selected_page == "Skills":
     st.write("### Professional Experience")
     st.write("""
 
-    **Data Science & Machine Learning Intern** | Sep 2020 – Dec 2020  
-    **Zesty Beanz Technologies**, Trivandrum, India  
-    - Completed a 4-month internship focused on the full data science lifecycle, honing skills in **data preprocessing**, **feature engineering**, and **model evaluation**.  
-    - Participated in hands-on machine learning workshops, mastering both **foundational** and **advanced techniques**, which culminated in self-directed projects that demonstrated real-world problem-solving abilities.  
-    - Developed a deep understanding of **supervised learning** and **data-driven insights** under the mentorship of experienced industry professionals, laying a strong foundation for future data science work.  
-
-    **Junior Data Analyst (Part-Time)** | Oct 2019 – May 2020  
-    **HiTech Spare Parts Centre**, Trivandrum, India  
-    - Utilized **Power BI** for end-to-end **ETL processes**, data modeling, and building **interactive dashboards** to track key business metrics such as spare part sales, stock, and inventory levels.  
-    - Conducted **inventory trend analysis** using Excel, providing crucial insights to support and optimize daily operations.  
-    - Spearheaded training sessions on Excel and Power BI, empowering the team to leverage data for improved decision-making and operational efficiency.  
-
-    **Computer Science Tutor** | Mar 2021 – Jul 2021  
-    **Campuzon**, Trivandrum, India  
-    - Taught **Python, SQL**, and core computer science concepts to over 100 undergraduate students, delivering hands-on, practical lessons.  
-    - Led workshops and personalized support sessions, adapting teaching methods to diverse learning styles and ensuring a deeper understanding of programming fundamentals.  
-    - Demonstrated leadership by managing a team of tutors, ensuring consistent teaching quality, and enhancing the department's ability to support student learning outcomes.  
-    - Played a pivotal role in creating an engaging and collaborative learning environment, boosting student confidence in mastering programming languages and problem-solving techniques.
+    **Junior Data Scientist** | Sep 2020 – Dec 2020  
+    **Zesty Beanz Technologies**, Trivandrum, India 
+    - Completed a 4-month internship, gaining hands-on experience in **data wrangling**, **feature engineering**, and **model evaluation** through practical workshops using **Python** and **SQL**.
+    - Developed a customer **segmentation** model using **K-means clustering** for a retail clothing chain, leveraging a 4-month sliding window approach to effectively handle **time-series** data.
+    - Conducted **cluster analysis** to tailor personalized promotions based on purchasing patterns, identifying key segments such as high-frequency and lapsed customers. 
+    - Integrated **targeted marketing** campaigns into Odoo **CRM**, boosting response rates by 20%.
+    - Collaborated to develop an **ARIMA**-based demand **forecasting model** for a supermarket chain, optimizing inventory management and improving seasonal stock predictions.
+    - Deployed **automated pipelines** in **Python** to streamline sales data integration into **ARIMA** models, displaying inventory forecasts on the Odoo ERP **dashboard**.
     """)
 
 
