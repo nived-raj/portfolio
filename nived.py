@@ -228,7 +228,7 @@ elif selected_page == "Skills":
     st.write("### Professional Experience")
     st.write("""
 
-    **Junior Data Scientist** | Sep 2020 – Dec 2020  
+    **Junior Data Scientist** | May 2020 – Jun 2021  
     **Zesty Beanz Technologies**, Trivandrum, India 
     - Completed a 4-month internship, gaining hands-on experience in **data wrangling**, **feature engineering**, and **model evaluation** through practical workshops using **Python** and **SQL**.
     - Developed a customer **segmentation** model using **K-means clustering** for a retail clothing chain, leveraging a 4-month sliding window approach to effectively handle **time-series** data.
