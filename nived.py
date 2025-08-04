@@ -78,47 +78,48 @@ def nav_menu():
 
     # Set the query params when a button is clicked
     if about_clicked:
-        st.experimental_set_query_params(page="About")
+        st.query_params["page"] = "About"
         return "About"
     elif education_clicked:
-        st.experimental_set_query_params(page="Education")
+        st.query_params["page"] = "Education"
         return "Education"
     elif skills_clicked:
-        st.experimental_set_query_params(page="Skills")
+        st.query_params["page"] = "Skills"
         return "Skills"
     elif contact_clicked:
-        st.experimental_set_query_params(page="Contact")
+        st.query_params["page"] = "Contact"
         return "Contact"
     elif youtube_clicked:
-        st.experimental_set_query_params(page="YouTube")
+        st.query_params["page"] = "YouTube"
         return "YouTube"
     elif anonymization_clicked:
-        st.experimental_set_query_params(page="Anonymization")
+        st.query_params["page"] = "Anonymization"
         return "Anonymization"
     elif movie_prediction_clicked:
-        st.experimental_set_query_params(page="Movie")
+        st.query_params["page"] = "Movie"
         return "Movie"
     elif fraud_detection_clicked:
-        st.experimental_set_query_params(page="Fraud")
+        st.query_params["page"] = "Fraud"
         return "Fraud"
     elif spotify_prediction_clicked:
-        st.experimental_set_query_params(page="Spotify")
+        st.query_params["page"] = "Spotify"
         return "Spotify"
     elif crypto_prediction_clicked:
-        st.experimental_set_query_params(page="Crypto")
+        st.query_params["page"] = "Crypto"
         return "Crypto"
     elif movie_recommendation_clicked:
-        st.experimental_set_query_params(page="Movie Rec")
+        st.query_params["page"] = "Movie Rec"
         return "Movie Rec"
     elif glasgow_city_clicked:
-        st.experimental_set_query_params(page="Glasgow")
+        st.query_params["page"] = "Glasgow"
         return "Glasgow"
     elif alcohol_analysis_clicked:
-        st.experimental_set_query_params(page="Alcohol")
+        st.query_params["page"] = "Alcohol"
         return "Alcohol"
     elif syncorg_optimization_clicked:
-        st.experimental_set_query_params(page="SyncOrg")
+        st.query_params["page"] = "SyncOrg"
         return "SyncOrg"
+
     
     return selected_page  # Default return from query params
 
