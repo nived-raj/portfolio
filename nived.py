@@ -1,8 +1,5 @@
 import streamlit as st
 
-import warnings
-warnings.filterwarnings("ignore")
-
 st.set_page_config(
     page_title="Nived Raj | Data Scientist",  
     
@@ -59,7 +56,7 @@ def nav_menu():
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
     
     # Retrieve current query params to highlight the correct page
-    query_params = st.query_params()
+    query_params = st.query_params
     selected_page = query_params.get("page", ["About"])[0]  # Default to "About" if no param is set
     
     about_clicked = st.sidebar.button("About")
