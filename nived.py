@@ -328,14 +328,14 @@ elif selected_page == "YouTube":
     A unique feature that analyzes the most discussed 10-second intervals of a video. Each bar in the chart represents a time segment, and by clicking on it, users can dive into the most liked comments during that interval. This reveals what parts of the video generated the most discussion—whether it’s a dramatic reveal or a controversial moment.
     """)
 
-    st.image("images/yt timebucket.png", caption="Popular Times segments of the video chart example", use_column_width=True)
+    st.image("images/yt timebucket.png", caption="Popular Times segments of the video chart example", use_container_width=True)
 
     st.write("""
     #### 2. Custom Sentiment Analysis
     The backbone of the dashboard is a custom-built sentiment analyzer that avoids spams, off topic comments - and calcualtes sentiment scores per comment. It is then used to caclulate the overall sentiment score - giving weight to comments per likes which gives comments most people agree on, more say in the final sentment score. Using this, the positive to negative proportion is calculated - and the scores are shown in a doughnut chart - which also assign a verdict like **“High Hype”** or **“Mostly Negative”** to the video.  I also integrated **emoji sentiment extraction** becuase emojies these days carry a lot of important sentiment that users express, adding another layer of depth to understand nuanced audience reactions.
     """)
 
-    st.image("images/yt sentiment.png", caption="Sentiment Scores and Verdict Example", use_column_width=True)
+    st.image("images/yt sentiment.png", caption="Sentiment Scores and Verdict Example", use_container_width=True)
 
     st.write("""
     #### 3. Interactive Word Clouds
@@ -344,7 +344,7 @@ elif selected_page == "YouTube":
     #### 4. Bigram Topic Extraction
     Using advanced NLP techniques, top 20 topics from the comments are extracted. Each topic is plotted in an interactive chart. When users click on a topic, they can view the most liked and replied comments discussing that theme. This provides deeper insight into what about the video the audience members are reacting to the most - what they hated, what they loved and what they wanted to see.
     """)
-    st.image("images/yt topics.png", caption="Popular Topics Chart Example", use_column_width=True)
+    st.image("images/yt topics.png", caption="Popular Topics Chart Example", use_container_width=True)
 
     st.write("""
 
@@ -671,7 +671,7 @@ elif selected_page == "Spotify":
     The goal of this project was to accurately predict the **genre** of Spotify songs based on a variety of features, such as artist, song attributes, and popularity metrics. By employing multiple machine learning models and fine-tuning them, I managed to achieve a **Kaggle score of 0.68421**, placing **2nd** in the competition.
     """)
 
-    st.image("images/Leaderboard Kaggle.png", caption="Kaggle Leaderboard", use_column_width=True)
+    st.image("images/Leaderboard Kaggle.png", caption="Kaggle Leaderboard", use_container_width=True)
 
     st.write("""
     ### Key Features
