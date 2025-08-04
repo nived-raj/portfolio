@@ -1,5 +1,8 @@
 import streamlit as st
 
+import warnings
+warnings.filterwarnings("ignore")
+
 st.set_page_config(
     page_title="Nived Raj | Data Scientist",  
     
