@@ -289,7 +289,13 @@ elif selected_page == "YouTube":
     """)
 
     st.markdown("""
-    **Check out the Live App!** 👉 [Interactive YouTube Comment Analytics](https://youtube-analytics.nivedraj.com/)
+    🔒 App No Longer Live
+
+    This project was previously hosted on AWS EC2 using the Free Tier.  
+    Since the Free Tier expired, the app is currently **not live**.
+
+    However, this page walks you through everything the project does — with context, screenshots, and impact.  
+    👉 You’ll find the **GitHub link to the code** at the bottom of this page.
     """)
 
     st.write("""
@@ -352,6 +358,7 @@ elif selected_page == "YouTube":
     An even more powerful and useful feature, where the user can search for custom topics. These can be single topics "background Score" or a long combination of keywords to be more specific like "Iron man suit design". This will quickly get specific insights that can be extremely valuable in understanding exactly what the audience loved, hated or wanted.
  
     """)
+    st.image("images/Topic search.jpg", caption="User Requested Topic Exploration Example", use_container_width=True)
 
     st.write("""
 
@@ -361,6 +368,11 @@ elif selected_page == "YouTube":
     What’s more, the dashboard is not limited to YouTube. Its design is adaptable for other platforms like **Twitter** and **Instagram**, as well as industries beyond entertainment, including **product reviews**, **news events**, and **consumer feedback**.
 
     This project highlights my ability to blend **data science**, **NLP**, and **cloud computing** to build a scalable tool that transforms raw comments into meaningful insights. Stay tuned for more updates and screenshots!
+    """)
+    st.subheader("💻 View the Code")
+
+    st.markdown("""
+    📄 [finytappdash.py – Full Source Code](https://github.com/nived-raj/youtube-analytics-dashboard/blob/main/finytappdash.py)
     """)
 
 
