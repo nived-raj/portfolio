@@ -289,13 +289,9 @@ elif selected_page == "YouTube":
     """)
 
     st.markdown("""
-    🔒 App No Longer Live
+    **Note:** This app was previously hosted on AWS EC2 using the Free Tier and is currently not live.
 
-    This project was previously hosted on AWS EC2 using the Free Tier.  
-    Since the Free Tier expired, the app is currently **not live**.
-
-    However, this page walks you through everything the project does — with context, screenshots, and impact.  
-    👉 You’ll find the **GitHub link to the code** at the bottom of this page.
+    This page provides a walkthrough of the project — including insights, screenshots, and results. [View the code here.](https://github.com/nived-raj/youtube-analytics-dashboard/blob/main/finytappdash.py)
     """)
 
     st.write("""
@@ -372,7 +368,7 @@ elif selected_page == "YouTube":
     st.subheader("💻 View the Code")
 
     st.markdown("""
-    📄 [finytappdash.py – Full Source Code](https://github.com/nived-raj/youtube-analytics-dashboard/blob/main/finytappdash.py)
+    📄 [YouTube Comment Analytics Project – Full Source Code](https://github.com/nived-raj/youtube-analytics-dashboard/blob/main/finytappdash.py)
     """)
 
 
