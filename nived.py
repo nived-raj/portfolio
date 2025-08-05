@@ -54,74 +54,41 @@ st.markdown("""
 def nav_menu():
     st.sidebar.markdown("<h1>Nived Raj</h1>", unsafe_allow_html=True)
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
-    
-    # Retrieve current query params to highlight the correct page
-    query_params = st.query_params
-    selected_page = query_params.get("page", ["About"])[0]  # Default to "About" if no param is set
-    
-    about_clicked = st.sidebar.button("About")
-    education_clicked = st.sidebar.button("Education")
-    skills_clicked = st.sidebar.button("Experience and Skills")
-    contact_clicked = st.sidebar.button("Contact Me")
+
+    # Get current query param (defaults to About)
+    current_page = st.query_params.get("page", ["About"])[0]
+
+    # Define buttons in a dictionary: {page_name: button_label}
+    page_buttons = {
+        "About": "About",
+        "Education": "Education",
+        "Skills": "Experience and Skills",
+        "Contact": "Contact Me",
+    }
 
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
-    youtube_clicked = st.sidebar.button("Real-Time YouTube Comments Analytics")
-    anonymization_clicked = st.sidebar.button("Text Data Anonymization for Healthcare")
-    movie_prediction_clicked = st.sidebar.button("Boxoffice Prediction")
-    fraud_detection_clicked = st.sidebar.button("Credit Card Fraud Detection")
-    spotify_prediction_clicked = st.sidebar.button("Spotify Song Genre Prediction")
-    crypto_prediction_clicked = st.sidebar.button("Crypto Prediction")
-    movie_recommendation_clicked = st.sidebar.button("Movie Recommendation System")
-    glasgow_city_clicked = st.sidebar.button("Real-Time View of Glasgow City Centre")
-    alcohol_analysis_clicked = st.sidebar.button("An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times")
-    syncorg_optimization_clicked = st.sidebar.button("Data Management & Workflow Optimization for SyncOrg")
+    page_buttons.update({
+        "YouTube": "Real-Time YouTube Comments Analytics",
+        "Anonymization": "Text Data Anonymization for Healthcare",
+        "Movie": "Boxoffice Prediction",
+        "Fraud": "Credit Card Fraud Detection",
+        "Spotify": "Spotify Song Genre Prediction",
+        "Crypto": "Crypto Prediction",
+        "Movie Rec": "Movie Recommendation System",
+        "Glasgow": "Real-Time View of Glasgow City Centre",
+        "Alcohol": "An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times",
+        "SyncOrg": "Data Management & Workflow Optimization for SyncOrg",
+    })
 
-    # Set the query params when a button is clicked
-    if about_clicked:
-        st.query_params["page"] = "About"
-        return "About"
-    elif education_clicked:
-        st.query_params["page"] = "Education"
-        return "Education"
-    elif skills_clicked:
-        st.query_params["page"] = "Skills"
-        return "Skills"
-    elif contact_clicked:
-        st.query_params["page"] = "Contact"
-        return "Contact"
-    elif youtube_clicked:
-        st.query_params["page"] = "YouTube"
-        return "YouTube"
-    elif anonymization_clicked:
-        st.query_params["page"] = "Anonymization"
-        return "Anonymization"
-    elif movie_prediction_clicked:
-        st.query_params["page"] = "Movie"
-        return "Movie"
-    elif fraud_detection_clicked:
-        st.query_params["page"] = "Fraud"
-        return "Fraud"
-    elif spotify_prediction_clicked:
-        st.query_params["page"] = "Spotify"
-        return "Spotify"
-    elif crypto_prediction_clicked:
-        st.query_params["page"] = "Crypto"
-        return "Crypto"
-    elif movie_recommendation_clicked:
-        st.query_params["page"] = "Movie Rec"
-        return "Movie Rec"
-    elif glasgow_city_clicked:
-        st.query_params["page"] = "Glasgow"
-        return "Glasgow"
-    elif alcohol_analysis_clicked:
-        st.query_params["page"] = "Alcohol"
-        return "Alcohol"
-    elif syncorg_optimization_clicked:
-        st.query_params["page"] = "SyncOrg"
-        return "SyncOrg"
+    # Render buttons and handle clicks
+    for page_key, label in page_buttons.items():
+        if st.sidebar.button(label):
+            st.query_params["page"] = page_key
+            current_page = page_key
+            break  # Stop at the first click
 
-    
-    return selected_page  # Default return from query params
+    return current_page
+
 
 
 # Display content based on the selected page
