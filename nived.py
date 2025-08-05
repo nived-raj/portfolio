@@ -54,17 +54,20 @@ st.markdown("""
 def nav_menu():
     st.sidebar.markdown("<h1>Nived Raj</h1>", unsafe_allow_html=True)
     st.sidebar.markdown("<h2>PROFILE</h2>", unsafe_allow_html=True)
-    
-    # Retrieve current query params to highlight the correct page
+
+    # Read the current query param, default to About
     query_params = st.query_params
-    selected_page = query_params.get("page", ["About"])[0]  # Default to "About" if no param is set
-    
+    selected_page = query_params.get("page", ["About"])[0]
+
+    # PROFILE
     about_clicked = st.sidebar.button("About")
     education_clicked = st.sidebar.button("Education")
     skills_clicked = st.sidebar.button("Experience and Skills")
     contact_clicked = st.sidebar.button("Contact Me")
 
     st.sidebar.markdown("<h2>PROJECTS</h2>", unsafe_allow_html=True)
+
+    # PROJECTS
     youtube_clicked = st.sidebar.button("Real-Time YouTube Comments Analytics")
     anonymization_clicked = st.sidebar.button("Text Data Anonymization for Healthcare")
     movie_prediction_clicked = st.sidebar.button("Boxoffice Prediction")
@@ -76,52 +79,53 @@ def nav_menu():
     alcohol_analysis_clicked = st.sidebar.button("An Analysis of Alcohol-Related Callouts' Burden on Ambulance Waiting Times")
     syncorg_optimization_clicked = st.sidebar.button("Data Management & Workflow Optimization for SyncOrg")
 
-    # Set the query params when a button is clicked
+    # When button is clicked, update both selected page and URL
     if about_clicked:
         st.query_params["page"] = "About"
-        return "About"
+        selected_page = "About"
     elif education_clicked:
         st.query_params["page"] = "Education"
-        return "Education"
+        selected_page = "Education"
     elif skills_clicked:
         st.query_params["page"] = "Skills"
-        return "Skills"
+        selected_page = "Skills"
     elif contact_clicked:
         st.query_params["page"] = "Contact"
-        return "Contact"
+        selected_page = "Contact"
     elif youtube_clicked:
         st.query_params["page"] = "YouTube"
-        return "YouTube"
+        selected_page = "YouTube"
     elif anonymization_clicked:
         st.query_params["page"] = "Anonymization"
-        return "Anonymization"
+        selected_page = "Anonymization"
     elif movie_prediction_clicked:
         st.query_params["page"] = "Movie"
-        return "Movie"
+        selected_page = "Movie"
     elif fraud_detection_clicked:
         st.query_params["page"] = "Fraud"
-        return "Fraud"
+        selected_page = "Fraud"
     elif spotify_prediction_clicked:
         st.query_params["page"] = "Spotify"
-        return "Spotify"
+        selected_page = "Spotify"
     elif crypto_prediction_clicked:
         st.query_params["page"] = "Crypto"
-        return "Crypto"
+        selected_page = "Crypto"
     elif movie_recommendation_clicked:
         st.query_params["page"] = "Movie Rec"
-        return "Movie Rec"
+        selected_page = "Movie Rec"
     elif glasgow_city_clicked:
         st.query_params["page"] = "Glasgow"
-        return "Glasgow"
+        selected_page = "Glasgow"
     elif alcohol_analysis_clicked:
         st.query_params["page"] = "Alcohol"
-        return "Alcohol"
+        selected_page = "Alcohol"
     elif syncorg_optimization_clicked:
         st.query_params["page"] = "SyncOrg"
-        return "SyncOrg"
+        selected_page = "SyncOrg"
 
-    
-    return selected_page  # Default return from query params
+    # Always return the current selected page
+    return selected_page
+
 
 
 # Display content based on the selected page
