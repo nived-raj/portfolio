@@ -58,7 +58,6 @@ def nav_menu():
     # Retrieve current query params to highlight the correct page
     query_params = st.query_params
     selected_page = query_params.get("page", "About")  # Default to "About" if no param is set
-    st.write("Selected page from URL:", selected_page)
     
     about_clicked = st.sidebar.button("About")
     education_clicked = st.sidebar.button("Education")
