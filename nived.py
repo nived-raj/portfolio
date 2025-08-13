@@ -205,8 +205,9 @@ elif selected_page == "Skills":
     skills = {
         "Programming Languages": "Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn), SQL (MySQL), R (Tidyverse), C++, HTML/CSS",
         "Data Science & Machine Learning": "Supervised & Unsupervised Learning, Feature Engineering, Model Deployment, Hyperparameter Tuning, Cross-Validation, Imbalanced Data Techniques (SMOTE, Undersampling), XGBoost, LightGBM, Random Forest, Logistic Regression, KNN, LSTM, Time Series Analysis",
+        "LLMs & Prompt Engineering": "Transformers, Prompt Design, Retrieval-Augmented Generation, OpenAI, Hugging Face",
         "Data Analytics & Visualization": "Tableau, Power BI (Dashboard Design, ETL, Data Modeling, Power Query, DAX), Altair, Excel (Advanced Formulas, Pivot Tables, VBA)",
-        "Cloud & DevOps": "AWS (EC2, S3), Streamlit, Git, GitHub",
+        "Cloud & DevOps": "AWS (EC2, S3, Lambda), SageMaker (Data Wrangler, Pipelines)",
         "Natural Language Processing (NLP)": "spaCy, NLTK, Bigrams, Sentiment Analysis, Named Entity Recognition (NER), Custom Dictionaries, Word Clouds",
         "Databases": "SQL (MySQL), NoSQL (MongoDB basics)",
         "Artificial Intelligence & Deep Learning": "Neural Networks, LSTM, Time Series Forecasting, Sentiment Analysis",
