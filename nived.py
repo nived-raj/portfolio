@@ -205,7 +205,7 @@ elif selected_page == "Skills":
     skills = {
         "Programming Languages": "Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn), SQL (MySQL), R (Tidyverse), C++, HTML/CSS",
         "Data Science & Machine Learning": "Supervised & Unsupervised Learning, Feature Engineering, Model Deployment, Hyperparameter Tuning, Cross-Validation, Imbalanced Data Techniques (SMOTE, Undersampling), XGBoost, LightGBM, Random Forest, Logistic Regression, KNN, LSTM, Time Series Analysis",
-        "LLMs & Prompt Engineering": "Transformers, Prompt Design, Retrieval-Augmented Generation, OpenAI, Hugging Face",
+        "LLMs & Prompt Engineering": "Transformers, Prompt Design, Retrieval-Augmented Generation, Hugging Face, OpenAI",
         "Data Analytics & Visualization": "Tableau, Power BI (Dashboard Design, ETL, Data Modeling, Power Query, DAX), Altair, Excel (Advanced Formulas, Pivot Tables, VBA)",
         "Cloud & DevOps": "AWS (EC2, S3, Lambda), SageMaker (Data Wrangler, Pipelines)",
         "Natural Language Processing (NLP)": "spaCy, NLTK, Bigrams, Sentiment Analysis, Named Entity Recognition (NER), Custom Dictionaries, Word Clouds",
@@ -233,11 +233,10 @@ elif selected_page == "Skills":
     **Junior Data Scientist** | May 2020 – Jun 2021  
     **Zesty Beanz Technologies**, Trivandrum, India 
     - Completed a 4-month internship, gaining hands-on experience in **data wrangling**, **feature engineering**, and **model evaluation** through practical workshops using **Python** and **SQL**.
-    - Developed a customer **segmentation** model using **K-means clustering** for a retail clothing chain, leveraging a 4-month sliding window approach to effectively handle **time-series** data.
-    - Conducted **cluster analysis** to tailor personalized promotions based on purchasing patterns, identifying key segments such as high-frequency and lapsed customers. 
-    - Integrated **targeted marketing** campaigns into Odoo **CRM**, boosting response rates by 20%.
-    - Collaborated to develop an **ARIMA**-based demand **forecasting model** for a supermarket chain, optimizing inventory management and improving seasonal stock predictions.
-    - Deployed **automated pipelines** in **Python** to streamline sales data integration into **ARIMA** models, displaying inventory forecasts on the Odoo ERP **dashboard**.
+    - Built a **K-means** customer **segmentation** model for a retail clothing chain with a 4-month time-windowed **clustering**, increasing campaign engagement by ~18%.
+    - Profiled customer segments (loyal, dormant, high-value), improving marketing ROI insights.
+    - Developed **ARIMA** based sales **forecasting** model for a supermarket chain, helping reduce overstock and stock-outs by ~12%.
+    - Created **Python ETL pipelines** for automated time series data ingestion, transformation, and visualization.
     """)
 
 
