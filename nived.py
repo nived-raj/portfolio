@@ -130,13 +130,13 @@ selected_page = nav_menu()
 if selected_page == "About":
     st.title("👋 Hey there! I’m Nived.")
     st.write("""
-I am a passionate **Data Scientist** who thrives on turning raw data into meaningful insights. For me, data isn’t just numbers on a screen—it’s a tool to shape decisions, drive innovation, and solve real-world problems. Whether I’m building **predictive models**, tackling **machine learning challenges**, or exploring **NLP**, I’m always looking for new ways to push the boundaries of what data can do.
+I’m a passionate Data Scientist who loves turning raw data into stories that drive decisions and spark innovation. For me, data isn’t just numbers on a screen—it’s a way to solve real-world problems, create smarter systems, and uncover insights others might miss. Whether I’m building predictive models, exploring NLP, or pushing the boundaries with LLM-powered analytics, I’m always looking for new ways to make data work harder.
 
-My work spans across multiple domains. I’ve developed solutions for **healthcare data anonymization** to ensure privacy compliance, built **credit card fraud detection models**, and even created a **Real-Time YouTube Comment Sentiment Analysis web app** that provides instant insights into audience sentiment. Lately, I’ve been diving into **cloud deployment** with **AWS**, scaling projects to make them more efficient and accessible.
+My work has taken me across domains—engineering GDPR-compliant healthcare data anonymization tools, detecting credit card fraud, and creating a Real-Time YouTube Comment Analytics web app that blends NLP sentiment scoring with LLM-generated topic summaries. I also enjoy the challenge of scaling ideas, from prototypes to production, using AWS services to make projects more powerful, efficient, and accessible.
 
-While I thrive in environments where **creativity meets logic**, life isn’t all about data! When I’m not immersed in my projects, you’ll find me out for a run, hitting the gym, or cooking up something new in the kitchen. I’m also a huge fan of **movies** and **video games**, which help me recharge after solving complex data problems.
+I thrive in spaces where creativity meets logic—designing solutions that are both technically sound and genuinely useful. And while I take my work seriously, I believe balance fuels performance. Outside of projects, you’ll find me running, lifting at the gym, experimenting in the kitchen, or unwinding with a great movie or video game.
 
-In short, I’m always curious, always learning, and always ready for the next exciting challenge. Whether it’s predicting trends or breaking down complex problems, I’m eager to dive in and get to work.
+Curiosity drives me forward. Whether it’s predicting trends, breaking down complex problems, or deploying something new to the cloud, I’m always ready to dive in and build something impactful.
 
 👈 Feel free to use the navigation on the left to check out my latest projects and learn more about me!
 
