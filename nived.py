@@ -307,6 +307,9 @@ elif selected_page == "YouTube":
         <div class="tag">Dash</div>
         <div class="tag">AWS (EC2)</div>
         <div class="tag">YouTube API</div>
+        <div class="tag">OpenAI API</div>
+        <div class="tag">LLM</div>
+        <div class="tag">Summarisation</div>
         <div class="tag">Interactive Dashboard</div>
         <div class="tag">Friendly UI</div>
         <div class="tag">NLP</div>
@@ -322,7 +325,7 @@ elif selected_page == "YouTube":
     # Continue with Project Description
     st.write("""
     ### Project Overview
-    The dashboard provides an intuitive interface for analyzing YouTube comments on videos, especially **trailers and reviews**. It allows users to search for a video by keyword and retrieve real-time comments. From there, the dashboard breaks down **audience sentiment**, **key discussion points**, and the most **engaging moments** of the video. This makes it especially useful for media and advertising teams who want to understand what resonates most with their target audience.
+    The dashboard provides an intuitive interface for analyzing YouTube comments on videos, especially trailers and reviews. Users can search for a video by keyword and retrieve real-time comments, which are then analyzed to break down audience sentiment, key discussion points, and the most engaging moments of the video. With the latest upgrade, the dashboard also delivers LLM-powered summaries for any topic a user searches—distilling dozens of top comments into a concise brief of what viewers liked, disliked, and wished to see. This makes it especially valuable for media and advertising teams who want to quickly understand what resonates most with their target audience without reading through every comment.
 
     ### Key Features
 
@@ -356,6 +359,15 @@ elif selected_page == "YouTube":
     """)
     st.image("images/Topic search.jpg", caption="User Requested Topic Exploration Example", use_container_width=True)
 
+
+    st.write("""
+
+    #### 6. LLM-Powered Topic Summaries
+    An upgrade to the custom topic search now adds LLM-generated summaries alongside the top comments. Using OpenAI’s gpt-4o-mini, the dashboard filters the most relevant comments, selects the top 50 by engagement, and sends them to the model with a structured prompt. The output delivers a brief overview plus bullet points on what viewers liked, disliked, and wanted to see, based only on the retrieved comments. With temperature 0 for consistency, this feature gives users instant, concise insights without reading through every comment.
+ 
+    """)
+
+    
     st.write("""
 
     ### Impact
@@ -363,7 +375,7 @@ elif selected_page == "YouTube":
 
     What’s more, the dashboard is not limited to YouTube. Its design is adaptable for other platforms like **Twitter** and **Instagram**, as well as industries beyond entertainment, including **product reviews**, **news events**, and **consumer feedback**.
 
-    This project highlights my ability to blend **data science**, **NLP**, and **cloud computing** to build a scalable tool that transforms raw comments into meaningful insights. Stay tuned for more updates and screenshots!
+    This project highlights my ability to blend **data science**, **NLP**, **LLM** and **cloud computing** to build a scalable tool that transforms raw comments into meaningful insights. Stay tuned for more updates and screenshots!
     """)
     st.subheader("💻 View the Code")
 
