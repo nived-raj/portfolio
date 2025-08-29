@@ -230,12 +230,11 @@ elif selected_page == "Skills":
     st.write("### Professional Experience")
     st.write("""
 
-    **Junior Data Scientist** | May 2020 – Jun 2021  
+    **Data Science Intern** | Oct 2020 – May 2021  
     **Zesty Beanz Technologies**, Trivandrum, India 
-    - Completed a 4-month internship, gaining hands-on experience in **data wrangling**, **feature engineering**, and **model evaluation** through practical workshops using **Python** and **SQL**.
     - Built a **K-means** customer **segmentation** model for a retail clothing chain with a 4-month time-windowed **clustering**, increasing campaign engagement by ~18%.
     - Profiled customer segments (loyal, dormant, high-value), improving marketing ROI insights.
-    - Developed **ARIMA** based sales **forecasting** model for a supermarket chain, helping reduce overstock and stock-outs by ~12%.
+    - Developed **SARIMA** based sales **forecasting** model for a supermarket chain, helping reduce overstock and stock-outs by ~12%.
     - Created **Python ETL pipelines** for automated time series data ingestion, transformation, and visualization.
     """)
 
