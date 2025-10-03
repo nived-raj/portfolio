@@ -230,12 +230,12 @@ elif selected_page == "Skills":
     st.write("### Professional Experience")
     st.write("""
 
-    **Data Science Intern** | Oct 2020 – May 2021  
+    **Junior Data Scientist** | Jun 2024 – Jun 2025  
     **Zesty Beanz Technologies**, Trivandrum, India 
-    - Built a **K-means** customer **segmentation** model for a retail clothing chain with a 4-month time-windowed **clustering**, increasing campaign engagement by ~18%.
+    - Segmented customers for a multi-branch clothing chain using RFM (PostgreSQL) and K-means (Python), enabling targeted promotions that lifted campaign response by 15%.
     - Profiled customer segments (loyal, dormant, high-value), improving marketing ROI insights.
-    - Developed **SARIMA** based sales **forecasting** model for a supermarket chain, helping reduce overstock and stock-outs by ~12%.
-    - Created **Python ETL pipelines** for automated time series data ingestion, transformation, and visualization.
+    - Assisted in sales forecasting with SARIMA and Prophet (Python) on supermarket data (~50k records/month), reducing stock-outs by 12%.
+    - Developed ETL pipelines (Python, Pandas, SQLAlchemy) to process CSV/Excel data into PostgreSQL, automating updates of Power BI dashboards for sales and operations.
     """)
 
 
